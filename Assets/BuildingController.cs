@@ -74,118 +74,117 @@ public class BuildingController : MonoBehaviour
 
         }
     }
-
-    private void SetSecondThirdGenBuildingActive()
+    
+    private void SetSecondFirstGenBuildingActive()
     {
         firstThirdGenBuilding.SetActive(true);
         secondFirstGenBuilding.SetActive(true);
         secondSecondGenBuilding.SetActive(false);
         secondThirdGenBuilding.SetActive(false);
-        if (!audioSource.isPlaying)
+       
+
+        if (!upgradeParticles2Gen1Played)
         {
-            audioSource.PlayOneShot(hydraulicSoundEffect);
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(hydraulicSoundEffect);
+            }
+            upgradeParticles2Gen1.Play();
+            upgradeParticles2Gen1Played = true;
+
         }
 
-        if (!upgradeParticles2Gen3)
-        {
-            upgradeParticles2Gen3.Play();
-            upgradeParticles2Gen3Played = !upgradeParticles2Gen3Played;
-        }
     }
-
+    
     private void SetSecondSecondGenBuildingActive()
     {
         firstThirdGenBuilding.SetActive(true);
         secondFirstGenBuilding.SetActive(false);
         secondSecondGenBuilding.SetActive(true);
         secondThirdGenBuilding.SetActive(false);
-        if (!audioSource.isPlaying)
-        {
-            audioSource.PlayOneShot(hydraulicSoundEffect);
-        }
-
+       
         if (!upgradeParticles2Gen2Played)
         {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(hydraulicSoundEffect);
+            }
+
             upgradeParticles2Gen2.Play();
-            upgradeParticles2Gen2Played = !upgradeParticles2Gen2Played;
+            upgradeParticles2Gen2Played = true;
         }
 
     }
 
-    private void SetSecondFirstGenBuildingActive()
+    private void SetSecondThirdGenBuildingActive()
     {
         firstThirdGenBuilding.SetActive(true);
         secondFirstGenBuilding.SetActive(false);
         secondSecondGenBuilding.SetActive(false);
         secondThirdGenBuilding.SetActive(true);
-        if (!audioSource.isPlaying)
+
+        if (!upgradeParticles2Gen3Played)
         {
-            audioSource.PlayOneShot(hydraulicSoundEffect);
+            //print("playing particle effect");
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(hydraulicSoundEffect);
+            }
+            upgradeParticles2Gen3.Play();
+            upgradeParticles2Gen3Played = true;
         }
-
-        if (!upgradeParticles2Gen1Played)
-        {
-            upgradeParticles2Gen1.Play();
-            upgradeParticles2Gen1Played = !upgradeParticles2Gen1Played;
-
-        }
-
     }
 
     private void SetFirstFirstGenBuildingActive()
     {
-        secondFirstGenBuilding.SetActive(false);
-        secondSecondGenBuilding.SetActive(false);
         firstFirstGenBuilding.SetActive(true);
         firstSecondGenBuilding.SetActive(false);
         firstThirdGenBuilding.SetActive(false);
-        if (!audioSource.isPlaying)
-        {
-            audioSource.PlayOneShot(hydraulicSoundEffect);
-        }
-
+       
         if (!upgradeParticles1Gen1Played)
         {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(hydraulicSoundEffect);
+            }
+
             upgradeParticles1Gen1.Play();
-            upgradeParticles1Gen1Played = !upgradeParticles1Gen1Played;
+            upgradeParticles1Gen1Played = true;
         }
     }
     private void SetFirstSecondGenBuildingActive()
     {
-        secondFirstGenBuilding.SetActive(false);
-        secondSecondGenBuilding.SetActive(false);
         firstFirstGenBuilding.SetActive(false);
         firstSecondGenBuilding.SetActive(true);
         firstThirdGenBuilding.SetActive(false);
-        if (!audioSource.isPlaying)
-        {
-            audioSource.PlayOneShot(hydraulicSoundEffect);
-        }
+        
 
         if (!upgradeParticles1Gen2Played)
         {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(hydraulicSoundEffect);
+            }
             upgradeParticles1Gen2.Play();
-            upgradeParticles1Gen2Played = !upgradeParticles1Gen2Played;
+            upgradeParticles1Gen2Played = true;
         }
         
     }
     private void SetFirstThirdGenBuildingActive()
     {
-        secondFirstGenBuilding.SetActive(false);
-        secondSecondGenBuilding.SetActive(false);
-        secondThirdGenBuilding.SetActive(false);
         firstFirstGenBuilding.SetActive(false);
         firstSecondGenBuilding.SetActive(false);
         firstThirdGenBuilding.SetActive(true);
-        if (!audioSource.isPlaying)
-        {
-            audioSource.PlayOneShot(hydraulicSoundEffect);
-        }
+       
 
         if (!upgradeParticles1Gen3Played)
         {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(hydraulicSoundEffect);
+            }
             upgradeParticles1Gen3.Play();
-            upgradeParticles1Gen3Played = !upgradeParticles1Gen3Played;
+            upgradeParticles1Gen3Played = true;
         }
     }
 }

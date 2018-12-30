@@ -28,23 +28,18 @@ public class Replay : MonoBehaviour
 		firstFirstGenBuilding.SetActive(false);
 		firstSecondGenBuilding.SetActive(false);
 		firstThirdGenBuilding.SetActive(false);
-        
+		
 		secondFirstGenBuilding.SetActive(false);
 		secondSecondGenBuilding.SetActive(false);
 		secondThirdGenBuilding.SetActive(false);
+			
+		 BuildingController.upgradeParticles1Gen1Played = false;
+		 BuildingController.upgradeParticles1Gen2Played = false;
+		 BuildingController.upgradeParticles1Gen3Played = false;
 		
-	 BuildingController.upgradeParticles1Gen1Played = false;
-	 BuildingController.upgradeParticles1Gen2Played = false;
-	 BuildingController.upgradeParticles1Gen3Played = false;
-    
-	 BuildingController.upgradeParticles2Gen1Played = false;
-	 BuildingController.upgradeParticles2Gen2Played = false;
-	 BuildingController.upgradeParticles2Gen3Played = false;
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
+		 BuildingController.upgradeParticles2Gen1Played = false;
+		 BuildingController.upgradeParticles2Gen2Played = false;
+		 BuildingController.upgradeParticles2Gen3Played = false;
 
 	}
 }
