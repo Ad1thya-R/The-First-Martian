@@ -24,8 +24,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09e1b463-773a-449f-8a55-7c63093e5436" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/BuildingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BuildingController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Replay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Replay.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 3.unity" afterDir="false" />
@@ -256,12 +254,12 @@
       <workItem from="1546122325289" duration="1000" />
       <workItem from="1546180047368" duration="6616000" />
       <workItem from="1546187914240" duration="1155000" />
-      <workItem from="1546199061613" duration="1678000" />
+      <workItem from="1546199061613" duration="1936000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11032000" />
+    <option name="totallyTimeSpent" value="11290000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
