@@ -21,6 +21,7 @@ public class RocketController : MonoBehaviour
     [SerializeField] ParticleSystem rcsRightParticles;
 
     [SerializeField] int stageToGoTo;
+    [SerializeField] private float maximumSafeLandingVelocity;
 
     enum State {Alive, Dying, Transcending}
     State state = State.Alive;
@@ -98,17 +99,30 @@ public class RocketController : MonoBehaviour
     {
         if (state != State.Alive) { return; }
 
-        switch (collision.gameObject.tag)
+       // switch (collision.gameObject.tag)
+       // {
+       //     case "Friendly":
+        //        break;
+        //    case "Finish":
+        //        StartSuccessSequence();
+       //         break;
+       //     default:
+       //         StartDeathSequence();
+       //         break;
+      //  }
+
+        if (collision.gameObject.CompareTag("Friendly") && rigidBody.velocity.magnitude < maximumSafeLandingVelocity * Time.deltaTime)
         {
-            case "Friendly":
-                break;
-            case "Finish":
-                StartSuccessSequence();
-                break;
-            default:
-                StartDeathSequence();
-                break;
+            return;
+        } else if (collision.gameObject.CompareTag("Finish") && rigidBody.velocity.magnitude < maximumSafeLandingVelocity * Time.deltaTime)
+        {
+            StartSuccessSequence();
         }
+        else
+        {
+            StartDeathSequence();
+        }
+        
     }
 
     private void StartDeathSequence()

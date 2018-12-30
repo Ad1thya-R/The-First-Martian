@@ -1466,7 +1466,7 @@ MonoBehaviour:
   _button4: {fileID: 831512728}
   _button5: {fileID: 1496762369}
   _button6: {fileID: 1780388114}
-  replay: {fileID: 702832909}
+  replay: {fileID: 702832907}
 --- !u!1001 &737074515
 Prefab:
   m_ObjectHideFlags: 0

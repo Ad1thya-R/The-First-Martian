@@ -8,18 +8,19 @@ public class GameController : MonoBehaviour
 
 	public static int gameStage = 0;
 
-	[SerializeField] private Button _button1;
-	[SerializeField] private Button _button2;
-	[SerializeField] private Button _button3;
-	[SerializeField] private Button _button4;
-	[SerializeField] private Button _button5;
-	[SerializeField] private Button _button6;
+	[SerializeField] public Button _button1;
+	[SerializeField] public Button _button2;
+	[SerializeField] public Button _button3;
+	[SerializeField] public Button _button4;
+	[SerializeField] public Button _button5;
+	[SerializeField] public Button _button6;
 
-	[SerializeField] private Button replay;
+	[SerializeField] public GameObject replay;
 
 	// Use this for initialization
 	void Start()
 	{
+
 	}
 
 	void Update()
@@ -34,7 +35,7 @@ public class GameController : MonoBehaviour
 				_button4.interactable = false;
 				_button5.interactable = false;
 				_button6.interactable = false;
-				replay.interactable = false;
+                replay.SetActive(false);
 				break;
 			case 1:
 				//print("1, 3, 4, 5, 6 disabled");
@@ -44,7 +45,7 @@ public class GameController : MonoBehaviour
 				_button4.interactable = false;
 				_button5.interactable = false;
 				_button6.interactable = false;
-				replay.interactable = false;
+				replay.SetActive(false);
 
 				break;
 			case 2:
@@ -55,7 +56,7 @@ public class GameController : MonoBehaviour
 				_button4.interactable = false;
 				_button5.interactable = false;
 				_button6.interactable = false;
-				replay.interactable = false;
+				replay.SetActive(false);
 
 				break;
 			case 3:
@@ -66,7 +67,7 @@ public class GameController : MonoBehaviour
 				_button1.interactable = false;
 				_button5.interactable = false;
 				_button6.interactable = false;
-				replay.interactable = false;
+				replay.SetActive(false);
 
 				break;
 			case 4:
@@ -77,7 +78,7 @@ public class GameController : MonoBehaviour
 				_button4.interactable = false;
 				_button1.interactable = false;
 				_button6.interactable = false;
-				replay.interactable = false;
+				replay.SetActive(false);
 
 				break;
 			case 5:
@@ -88,7 +89,7 @@ public class GameController : MonoBehaviour
 				_button4.interactable = false;
 				_button5.interactable = false;
 				_button1.interactable = false;
-				replay.interactable = false;
+				replay.SetActive(false);
 
 				break;
 			case 6:
@@ -99,7 +100,7 @@ public class GameController : MonoBehaviour
 				_button4.interactable = false;
 				_button5.interactable = false;
 				_button6.interactable = false;
-				replay.interactable = true;
+				replay.SetActive(true);
 
 				break;
 
