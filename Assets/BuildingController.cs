@@ -1,77 +1,191 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class BuildingController : MonoBehaviour {
+public class BuildingController : MonoBehaviour 
+{
 
-    [SerializeField] GameObject firstGenBuilding;
-    [SerializeField] GameObject secondGenBuilding;
-    [SerializeField] GameObject thirdGenBuilding;
+    [SerializeField] GameObject firstFirstGenBuilding;
+    [SerializeField] GameObject firstSecondGenBuilding;
+    [SerializeField] GameObject firstThirdGenBuilding;
+    
+    [SerializeField] GameObject secondFirstGenBuilding;
+    [SerializeField] GameObject secondSecondGenBuilding;
+    [SerializeField] GameObject secondThirdGenBuilding;
 
-    [SerializeField] ParticleSystem upgradeParticlesGen1;
-    [SerializeField] ParticleSystem upgradeParticlesGen2;
-    [SerializeField] ParticleSystem upgradeParticlesGen3;
+    [SerializeField] ParticleSystem upgradeParticles1Gen1;
+    [SerializeField] ParticleSystem upgradeParticles1Gen2;
+    [SerializeField] ParticleSystem upgradeParticles1Gen3;
+    
+    [SerializeField] ParticleSystem upgradeParticles2Gen1;
+    [SerializeField] ParticleSystem upgradeParticles2Gen2;
+    [SerializeField] ParticleSystem upgradeParticles2Gen3;
 
     [SerializeField] AudioClip hydraulicSoundEffect;
 
     AudioSource audioSource;
+
+    public static bool upgradeParticles1Gen1Played = false;
+    public static bool upgradeParticles1Gen2Played = false;
+    public static bool upgradeParticles1Gen3Played = false;
+    
+    public static bool upgradeParticles2Gen1Played = false;
+    public static bool upgradeParticles2Gen2Played = false;
+    public static bool upgradeParticles2Gen3Played = false;
 
     // Use this for initialization
     void Start ()
     {
         audioSource = GetComponent<AudioSource>();
         
-        firstGenBuilding.SetActive(false);
-        secondGenBuilding.SetActive(false);
-        thirdGenBuilding.SetActive(false);
+        firstFirstGenBuilding.SetActive(false);
+        firstSecondGenBuilding.SetActive(false);
+        firstThirdGenBuilding.SetActive(false);
+        
+        secondFirstGenBuilding.SetActive(false);
+        secondSecondGenBuilding.SetActive(false);
+        secondThirdGenBuilding.SetActive(false);
+        
+        if(GameController.gameStage == 1)
+        {
+            SetFirstFirstGenBuildingActive();
+        } 
+        else if(GameController.gameStage == 2)
+        {
+            SetFirstSecondGenBuildingActive();
+        }
+        else if(GameController.gameStage == 3)
+        {
+            SetFirstThirdGenBuildingActive();
+        }
+        else if(GameController.gameStage == 4)
+        {
+            SetSecondFirstGenBuildingActive();
+        }
+        else if(GameController.gameStage == 5)
+        {
+            SetSecondSecondGenBuildingActive();
+
+        }
+        else if(GameController.gameStage == 6)
+        {
+            SetSecondThirdGenBuildingActive();
+
+        }
     }
 
-    // Update is called once per frame
-    void Update () {
-        if(Input.GetKey("1"))
+    private void SetSecondThirdGenBuildingActive()
+    {
+        firstThirdGenBuilding.SetActive(true);
+        secondFirstGenBuilding.SetActive(true);
+        secondSecondGenBuilding.SetActive(false);
+        secondThirdGenBuilding.SetActive(false);
+        if (!audioSource.isPlaying)
         {
-            SetFirstGenBuildingActive();
-        } else if(Input.GetKey("2"))
-        {
-            SetSecondGenBuildingActive();
+            audioSource.PlayOneShot(hydraulicSoundEffect);
         }
-        else if(Input.GetKey("3"))
+
+        if (!upgradeParticles2Gen3)
         {
-            SetThirdGenBuildingActive();
+            upgradeParticles2Gen3.Play();
+            upgradeParticles2Gen3Played = !upgradeParticles2Gen3Played;
         }
     }
 
-    private void SetFirstGenBuildingActive()
+    private void SetSecondSecondGenBuildingActive()
     {
-        firstGenBuilding.SetActive(true);
-        secondGenBuilding.SetActive(false);
-        thirdGenBuilding.SetActive(false);
+        firstThirdGenBuilding.SetActive(true);
+        secondFirstGenBuilding.SetActive(false);
+        secondSecondGenBuilding.SetActive(true);
+        secondThirdGenBuilding.SetActive(false);
         if (!audioSource.isPlaying)
         {
             audioSource.PlayOneShot(hydraulicSoundEffect);
         }
-        upgradeParticlesGen1.Play();
+
+        if (!upgradeParticles2Gen2Played)
+        {
+            upgradeParticles2Gen2.Play();
+            upgradeParticles2Gen2Played = !upgradeParticles2Gen2Played;
+        }
+
     }
-    private void SetSecondGenBuildingActive()
+
+    private void SetSecondFirstGenBuildingActive()
     {
-        firstGenBuilding.SetActive(false);
-        secondGenBuilding.SetActive(true);
-        thirdGenBuilding.SetActive(false);
+        firstThirdGenBuilding.SetActive(true);
+        secondFirstGenBuilding.SetActive(false);
+        secondSecondGenBuilding.SetActive(false);
+        secondThirdGenBuilding.SetActive(true);
         if (!audioSource.isPlaying)
         {
             audioSource.PlayOneShot(hydraulicSoundEffect);
         }
-        upgradeParticlesGen2.Play();
+
+        if (!upgradeParticles2Gen1Played)
+        {
+            upgradeParticles2Gen1.Play();
+            upgradeParticles2Gen1Played = !upgradeParticles2Gen1Played;
+
+        }
+
     }
-    private void SetThirdGenBuildingActive()
+
+    private void SetFirstFirstGenBuildingActive()
     {
-        firstGenBuilding.SetActive(false);
-        secondGenBuilding.SetActive(false);
-        thirdGenBuilding.SetActive(true);
+        secondFirstGenBuilding.SetActive(false);
+        secondSecondGenBuilding.SetActive(false);
+        firstFirstGenBuilding.SetActive(true);
+        firstSecondGenBuilding.SetActive(false);
+        firstThirdGenBuilding.SetActive(false);
         if (!audioSource.isPlaying)
         {
             audioSource.PlayOneShot(hydraulicSoundEffect);
         }
-        upgradeParticlesGen3.Play();
+
+        if (!upgradeParticles1Gen1Played)
+        {
+            upgradeParticles1Gen1.Play();
+            upgradeParticles1Gen1Played = !upgradeParticles1Gen1Played;
+        }
+    }
+    private void SetFirstSecondGenBuildingActive()
+    {
+        secondFirstGenBuilding.SetActive(false);
+        secondSecondGenBuilding.SetActive(false);
+        firstFirstGenBuilding.SetActive(false);
+        firstSecondGenBuilding.SetActive(true);
+        firstThirdGenBuilding.SetActive(false);
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(hydraulicSoundEffect);
+        }
+
+        if (!upgradeParticles1Gen2Played)
+        {
+            upgradeParticles1Gen2.Play();
+            upgradeParticles1Gen2Played = !upgradeParticles1Gen2Played;
+        }
+        
+    }
+    private void SetFirstThirdGenBuildingActive()
+    {
+        secondFirstGenBuilding.SetActive(false);
+        secondSecondGenBuilding.SetActive(false);
+        secondThirdGenBuilding.SetActive(false);
+        firstFirstGenBuilding.SetActive(false);
+        firstSecondGenBuilding.SetActive(false);
+        firstThirdGenBuilding.SetActive(true);
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(hydraulicSoundEffect);
+        }
+
+        if (!upgradeParticles1Gen3Played)
+        {
+            upgradeParticles1Gen3.Play();
+            upgradeParticles1Gen3Played = !upgradeParticles1Gen3Played;
+        }
     }
 }

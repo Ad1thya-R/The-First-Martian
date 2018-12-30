@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RocketController : MonoBehaviour 
+public class RocketController : MonoBehaviour
 {
 
     Rigidbody rigidBody;
@@ -20,17 +20,16 @@ public class RocketController : MonoBehaviour
     [SerializeField] ParticleSystem rcsLeftParticles;
     [SerializeField] ParticleSystem rcsRightParticles;
 
-    public bool isCrashed;
+    [SerializeField] int stageToGoTo;
 
     enum State {Alive, Dying, Transcending}
     State state = State.Alive;
-
+    
 	// Use this for initialization
-	void Start () 
+	void Start ()
     {
         rigidBody = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
-        isCrashed = false;
     }
 	
 	// Update is called once per frame
@@ -115,7 +114,6 @@ public class RocketController : MonoBehaviour
     private void StartDeathSequence()
     {
         state = State.Dying;
-        isCrashed = true;
         audioSource.Stop();
         mainEngineParticles.Stop();
         if (!audioSource.isPlaying)
@@ -131,6 +129,7 @@ public class RocketController : MonoBehaviour
 
     private void StartSuccessSequence()
     {
+        GameController.gameStage = stageToGoTo;
         state = State.Transcending;
         audioSource.Stop();
         if (!audioSource.isPlaying)
@@ -139,7 +138,6 @@ public class RocketController : MonoBehaviour
         }
 
         jingleParticles.Play();
-
         Invoke("ReturnToMainGame", levelLoadDelay);
     }
 

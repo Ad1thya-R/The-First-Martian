@@ -11,8 +11,10 @@ public class BtnOnClick : MonoBehaviour
 	[SerializeField] Button Btn;
 	[SerializeField] String indexOfLvlToLoad;
 
+
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		Btn.onClick.AddListener(BtnClicked);
 	}
 
