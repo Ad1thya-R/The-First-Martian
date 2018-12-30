@@ -25,15 +25,7 @@
   <component name="ChangeListManager">
     <list default="true" id="09e1b463-773a-449f-8a55-7c63093e5436" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Terraforming-Mars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Terraforming-Mars/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 6.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RocketController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RocketController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MarsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MarsController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/RocketController.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="290">
@@ -112,6 +104,22 @@
                 <marker date="1546205091753" expanded="true" signature="3901:3966" ph="{...}" />
                 <marker date="1546205091753" expanded="true" signature="4094:4141" ph="{...}" />
                 <marker date="1546205091753" expanded="true" signature="4174:4254" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/MarsController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <folding>
+                <marker date="1546208897178" expanded="false" signature="6:78" ph="..." />
+                <marker date="1546208897178" expanded="true" signature="124:483" ph="{...}" />
+                <marker date="1546208897178" expanded="true" signature="214:218" ph="{...}" />
+                <marker date="1546208897178" expanded="true" signature="271:481" ph="{...}" />
+                <marker date="1546208897178" expanded="true" signature="334:478" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -170,6 +178,7 @@
         <option value="$PROJECT_DIR$/Assets/BuildingController.cs" />
         <option value="$USER_HOME$/Downloads/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RocketController.cs" />
+        <option value="$PROJECT_DIR$/Assets/MarsController.cs" />
       </list>
     </option>
   </component>
@@ -261,12 +270,12 @@
       <workItem from="1546122325289" duration="1000" />
       <workItem from="1546180047368" duration="6616000" />
       <workItem from="1546187914240" duration="1155000" />
-      <workItem from="1546199061613" duration="4103000" />
+      <workItem from="1546199061613" duration="4774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13457000" />
+    <option name="totallyTimeSpent" value="14128000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -330,20 +339,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/MarsController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <marker date="1546091322000" expanded="false" signature="6:78" ph="..." />
-            <marker date="1546091322000" expanded="true" signature="124:467" ph="{...}" />
-            <marker date="1546091322000" expanded="true" signature="214:221" ph="{...}" />
-            <marker date="1546091322000" expanded="true" signature="276:465" ph="{...}" />
-            <marker date="1546091322000" expanded="true" signature="314:459" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/BtnOnClick.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -458,6 +453,20 @@
             <marker date="1546205091753" expanded="true" signature="3901:3966" ph="{...}" />
             <marker date="1546205091753" expanded="true" signature="4094:4141" ph="{...}" />
             <marker date="1546205091753" expanded="true" signature="4174:4254" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/MarsController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <marker date="1546208897178" expanded="false" signature="6:78" ph="..." />
+            <marker date="1546208897178" expanded="true" signature="124:483" ph="{...}" />
+            <marker date="1546208897178" expanded="true" signature="214:218" ph="{...}" />
+            <marker date="1546208897178" expanded="true" signature="271:481" ph="{...}" />
+            <marker date="1546208897178" expanded="true" signature="334:478" ph="{...}" />
           </folding>
         </state>
       </provider>
