@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class RocketController : MonoBehaviour
@@ -36,6 +37,13 @@ public class RocketController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {
+        //Prevents rocket from leaving the screen
+        
+        //Vector3 pos = Camera.main.WorldToViewportPoint (transform.position);
+        //pos.x = Mathf.Clamp01(pos.x);
+        //pos.y = Mathf.Clamp01(pos.y);
+        //transform.position = Camera.main.ViewportToWorldPoint(pos);
+        
         if (state == State.Alive)
         {
             RespondToThrustInput();

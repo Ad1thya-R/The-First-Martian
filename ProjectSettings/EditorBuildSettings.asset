@@ -6,24 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/Main Scene/MainScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
+    path: Assets/Scenes/Thrust (1986)/Level 1.unity
     guid: 3be7ecad2d9e245b391f9b199735dd9f
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
+    path: Assets/Scenes/Thrust (1986)/Level 2.unity
     guid: a4e4492697ddf4d209c519c0f83e7e22
   - enabled: 1
-    path: Assets/Scenes/Level 3.unity
+    path: Assets/Scenes/Thrust (1986)/Level 3.unity
     guid: 63170b54694fa4a9aab98f792d643ea6
   - enabled: 1
-    path: Assets/Scenes/Level 4.unity
+    path: Assets/Scenes/Thrust (1986)/Level 4.unity
     guid: e898a0bdbd34d4dde8b2ef5de0ce5247
   - enabled: 1
-    path: Assets/Scenes/Level 5.unity
+    path: Assets/Scenes/Thrust (1986)/Level 5.unity
     guid: c536d83b34695428ca8f911ca48dcf45
   - enabled: 1
-    path: Assets/Scenes/Level 6.unity
+    path: Assets/Scenes/Thrust (1986)/Level 6.unity
     guid: 90d3d102d2e6e42d9a1ee7ddb6f17a19
   m_configObjects: {}
