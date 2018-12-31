@@ -23,10 +23,7 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09e1b463-773a-449f-8a55-7c63093e5436" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Terraforming-Mars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Terraforming-Mars/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MarsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MarsController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="09e1b463-773a-449f-8a55-7c63093e5436" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,14 +109,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/MarsController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="374">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
-                <marker date="1546208897178" expanded="false" signature="6:78" ph="..." />
-                <marker date="1546208897178" expanded="true" signature="124:483" ph="{...}" />
-                <marker date="1546208897178" expanded="true" signature="214:218" ph="{...}" />
-                <marker date="1546208897178" expanded="true" signature="271:481" ph="{...}" />
-                <marker date="1546208897178" expanded="true" signature="334:478" ph="{...}" />
+                <marker date="1546209087998" expanded="false" signature="6:78" ph="..." />
+                <marker date="1546209087998" expanded="true" signature="124:489" ph="{...}" />
+                <marker date="1546209087998" expanded="true" signature="214:218" ph="{...}" />
+                <marker date="1546209087998" expanded="true" signature="271:487" ph="{...}" />
+                <marker date="1546209087998" expanded="true" signature="340:484" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -270,12 +267,12 @@
       <workItem from="1546122325289" duration="1000" />
       <workItem from="1546180047368" duration="6616000" />
       <workItem from="1546187914240" duration="1155000" />
-      <workItem from="1546199061613" duration="4774000" />
+      <workItem from="1546199061613" duration="5392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14128000" />
+    <option name="totallyTimeSpent" value="14746000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -459,14 +456,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/MarsController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="374">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
-            <marker date="1546208897178" expanded="false" signature="6:78" ph="..." />
-            <marker date="1546208897178" expanded="true" signature="124:483" ph="{...}" />
-            <marker date="1546208897178" expanded="true" signature="214:218" ph="{...}" />
-            <marker date="1546208897178" expanded="true" signature="271:481" ph="{...}" />
-            <marker date="1546208897178" expanded="true" signature="334:478" ph="{...}" />
+            <marker date="1546209087998" expanded="false" signature="6:78" ph="..." />
+            <marker date="1546209087998" expanded="true" signature="124:489" ph="{...}" />
+            <marker date="1546209087998" expanded="true" signature="214:218" ph="{...}" />
+            <marker date="1546209087998" expanded="true" signature="271:487" ph="{...}" />
+            <marker date="1546209087998" expanded="true" signature="340:484" ph="{...}" />
           </folding>
         </state>
       </provider>
