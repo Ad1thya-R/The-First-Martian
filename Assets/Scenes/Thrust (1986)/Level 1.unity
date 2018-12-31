@@ -247,6 +247,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114548131633940962, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c,
+        type: 2}
+      propertyPath: rcsThruster
+      value: 
+      objectReference: {fileID: 8300000, guid: 48801e71456f84fabb962da6d68d68b9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c, type: 2}
   m_IsPrefabAsset: 0
