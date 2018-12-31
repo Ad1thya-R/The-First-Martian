@@ -676,6 +676,11 @@ Prefab:
       propertyPath: fuelAvailable
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 82822088741653542, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c, type: 2}
   m_IsPrefabAsset: 0
