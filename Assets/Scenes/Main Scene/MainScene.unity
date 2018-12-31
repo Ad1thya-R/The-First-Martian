@@ -522,7 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4fbb38828dd41318d6eb96a6eda3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Btn: {fileID: 185365159}
+  btn: {fileID: 185365159}
   indexOfLvlToLoad: 2
 --- !u!114 &185365159
 MonoBehaviour:
@@ -1875,7 +1875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4fbb38828dd41318d6eb96a6eda3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Btn: {fileID: 831512728}
+  btn: {fileID: 831512728}
   indexOfLvlToLoad: 4
 --- !u!114 &831512728
 MonoBehaviour:
@@ -2301,7 +2301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4fbb38828dd41318d6eb96a6eda3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Btn: {fileID: 1097067427}
+  btn: {fileID: 1097067427}
   indexOfLvlToLoad: 1
 --- !u!1 &1110604152
 GameObject:
@@ -3108,7 +3108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4fbb38828dd41318d6eb96a6eda3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Btn: {fileID: 1451876995}
+  btn: {fileID: 1451876995}
   indexOfLvlToLoad: 3
 --- !u!114 &1451876995
 MonoBehaviour:
@@ -3234,7 +3234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4fbb38828dd41318d6eb96a6eda3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Btn: {fileID: 1496762369}
+  btn: {fileID: 1496762369}
   indexOfLvlToLoad: 5
 --- !u!114 &1496762369
 MonoBehaviour:
@@ -3824,7 +3824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4fbb38828dd41318d6eb96a6eda3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Btn: {fileID: 1780388114}
+  btn: {fileID: 1780388114}
   indexOfLvlToLoad: 6
 --- !u!114 &1780388114
 MonoBehaviour:

@@ -16,7 +16,7 @@ public class MarsController : MonoBehaviour {
 		transform.Rotate(0f, -0.02f, 0f);
 		if (Input.GetMouseButton(0))
 		{
-			transform.Rotate(new Vector3(Input.GetAxis("Mouse Y"), -Input.GetAxis("Mouse X"), 0) * Time.deltaTime *
+			transform.Rotate(new Vector3(0f, -Input.GetAxis("Mouse X"), 0) * Time.deltaTime *
 			                 speed);
 
 		}

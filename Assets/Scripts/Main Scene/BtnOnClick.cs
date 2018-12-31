@@ -8,23 +8,18 @@ using UnityEngine.UI;
 public class BtnOnClick : MonoBehaviour
 {
 
-	[SerializeField] Button Btn;
+	[SerializeField] Button btn;
 	[SerializeField] String indexOfLvlToLoad;
 
 
 	// Use this for initialization
 	void Start ()
 	{
-		Btn.onClick.AddListener(BtnClicked);
+		btn.onClick.AddListener(BtnClicked);
 	}
 
 	void BtnClicked()
 	{
 		SceneManager.LoadScene(Int32.Parse(indexOfLvlToLoad));
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }

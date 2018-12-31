@@ -39,42 +39,51 @@ public class BuildingController : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         
-        firstFirstGenBuilding.SetActive(false);
-        firstSecondGenBuilding.SetActive(false);
-        firstThirdGenBuilding.SetActive(false);
+        RemoveBuildingsFromView();
         
-        secondFirstGenBuilding.SetActive(false);
-        secondSecondGenBuilding.SetActive(false);
-        secondThirdGenBuilding.SetActive(false);
-        
-        if(GameController.gameStage == 1)
+        ShowBuildings();
+    }
+
+    private void ShowBuildings()
+    {
+        if (GameController.gameStage == 1)
         {
             SetFirstFirstGenBuildingActive();
-        } 
-        else if(GameController.gameStage == 2)
+        }
+        else if (GameController.gameStage == 2)
         {
             SetFirstSecondGenBuildingActive();
         }
-        else if(GameController.gameStage == 3)
+        else if (GameController.gameStage == 3)
         {
             SetFirstThirdGenBuildingActive();
         }
-        else if(GameController.gameStage == 4)
+        else if (GameController.gameStage == 4)
         {
             SetSecondFirstGenBuildingActive();
         }
-        else if(GameController.gameStage == 5)
+        else if (GameController.gameStage == 5)
         {
             SetSecondSecondGenBuildingActive();
-
         }
-        else if(GameController.gameStage == 6)
+        else if (GameController.gameStage == 6)
         {
             SetSecondThirdGenBuildingActive();
-
         }
     }
-    
+
+    private void RemoveBuildingsFromView()
+    {
+        
+        firstFirstGenBuilding.SetActive(false);
+        firstSecondGenBuilding.SetActive(false);
+        firstThirdGenBuilding.SetActive(false);
+
+        secondFirstGenBuilding.SetActive(false);
+        secondSecondGenBuilding.SetActive(false);
+        secondThirdGenBuilding.SetActive(false);
+    }
+
     private void SetSecondFirstGenBuildingActive()
     {
         firstThirdGenBuilding.SetActive(true);
