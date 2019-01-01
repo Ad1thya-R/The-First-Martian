@@ -104,6 +104,9 @@ public class RocketController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
+        print(collision.relativeVelocity.y);
+        
         if (state != State.Alive) { return; }
 
        // switch (collision.gameObject.tag)
@@ -118,11 +121,11 @@ public class RocketController : MonoBehaviour
        //         break;
       //  }
 
-        if (collision.gameObject.CompareTag("Friendly") && rigidBody.velocity.magnitude < maximumSafeLandingVelocity * Time.deltaTime)
-        {
+        if (collision.gameObject.CompareTag("Friendly") && collision.relativeVelocity.y < maximumSafeLandingVelocity)
+        {   
             return;
-        } else if (collision.gameObject.CompareTag("Finish") && rigidBody.velocity.magnitude < maximumSafeLandingVelocity * Time.deltaTime)
-        {
+        } else if (collision.gameObject.CompareTag("Finish") && collision.relativeVelocity.y < maximumSafeLandingVelocity)
+        { 
             StartSuccessSequence();
         }
         else
@@ -136,7 +139,11 @@ public class RocketController : MonoBehaviour
     {
         state = State.Dying;
         audioSource.Stop();
+        
         mainEngineParticles.Stop();
+        rcsLeftParticles.Stop();
+        rcsRightParticles.Stop();
+        
         if (!audioSource.isPlaying)
         {
             audioSource.PlayOneShot(explosion);
@@ -153,6 +160,11 @@ public class RocketController : MonoBehaviour
         GameController.gameStage = stageToGoTo;
         state = State.Transcending;
         audioSource.Stop();
+        
+        mainEngineParticles.Stop();
+        rcsLeftParticles.Stop();
+        rcsRightParticles.Stop();
+        
         if (!audioSource.isPlaying)
         {
             audioSource.PlayOneShot(jingle);

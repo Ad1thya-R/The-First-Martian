@@ -560,7 +560,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4521053293159136, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.62
+      value: 2.46
       objectReference: {fileID: 0}
     - target: {fileID: 4521053293159136, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -594,7 +594,7 @@ Prefab:
     - target: {fileID: 114548131633940962, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c,
         type: 2}
       propertyPath: maximumSafeLandingVelocity
-      value: 30
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114548131633940962, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c,
         type: 2}
