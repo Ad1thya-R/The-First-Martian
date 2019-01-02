@@ -221,7 +221,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4521053293159136, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.46
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 4521053293159136, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -247,25 +247,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114548131633940962, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c,
-        type: 2}
-      propertyPath: rcsThruster
-      value: 
-      objectReference: {fileID: 8300000, guid: 48801e71456f84fabb962da6d68d68b9, type: 3}
-    - target: {fileID: 82822088741653542, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c,
-        type: 2}
-      propertyPath: m_Volume
-      value: 0.5
+    - target: {fileID: 4516821344380830, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.22
       objectReference: {fileID: 0}
-    - target: {fileID: 114548131633940962, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c,
-        type: 2}
-      propertyPath: maximumSafeLandingVelocity
-      value: 4
+    - target: {fileID: 4516821344380830, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548131633940962, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c,
-        type: 2}
-      propertyPath: stageToGoTo
-      value: 1
+    - target: {fileID: 4516821344380830, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eebe7b8ec9fb40ad84664a72ac35c7c, type: 2}
