@@ -45,28 +45,32 @@ public class RocketController : MonoBehaviour
     }
 	
 	// Update is called once per frame
-	void Update ()
+    void Update()
     {
-        
+       
         fuelIndicator.text = "Fuel: " + remainingFuel.ToString();
 
-        if (remainingFuel == 0)
+        if (remainingFuel < 10)
         {
             fuelIndicator.color = Color.red;
         }
-        
+        else
+        {
+            fuelIndicator.color = Color.white;
+        }
+
         //Prevents rocket from leaving the screen
-        
-        Vector3 pos = Camera.main.WorldToViewportPoint (transform.position);
+
+        Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
         pos.y = Mathf.Clamp01(pos.y);
         transform.position = Camera.main.ViewportToWorldPoint(pos);
-        
+
         if (state == State.Alive)
         {
             RespondToThrustInput();
             RespondToRotateInput();
         }
-	}
+    }
 
     private void RespondToRotateInput()
     {
@@ -99,7 +103,7 @@ public class RocketController : MonoBehaviour
         {
             if (!IsInvoking("burnFuel"))
             {
-                InvokeRepeating("burnFuel", 0.5f, 1f);
+                InvokeRepeating("burnFuel", 0f, 0.1f);
             }
 
             if (remainingFuel > 0)
@@ -185,6 +189,7 @@ public class RocketController : MonoBehaviour
     private void StartDeathSequence()
     {
         state = State.Dying;
+        CancelInvoke();
         audioSource.Stop();
         
         mainEngineParticles.Stop();
@@ -206,6 +211,7 @@ public class RocketController : MonoBehaviour
     {
         GameController.gameStage = stageToGoTo;
         state = State.Transcending;
+        CancelInvoke();
         audioSource.Stop();
         
         mainEngineParticles.Stop();
