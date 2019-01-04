@@ -76,16 +76,18 @@ public class RocketController : MonoBehaviour
     {
         float rotationSpeed = rcsThrust * Time.deltaTime;
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) && remainingFuel > 0)
         {
             rigidBody.freezeRotation = true;
+            rcsRightParticles.Stop();
             transform.Rotate(Vector3.forward * rotationSpeed);
             rigidBody.freezeRotation = false;
             rcsRightParticles.Play();
         }
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D) && remainingFuel > 0)
         {
             rigidBody.freezeRotation = true;
+            rcsLeftParticles.Stop();
             transform.Rotate(-Vector3.forward * rotationSpeed);
             rigidBody.freezeRotation = false;
             rcsLeftParticles.Play();
