@@ -5,6 +5,8 @@ using UnityEngine.Serialization;
 
 public class BuildingController : MonoBehaviour 
 {
+    
+    //Todo: RENAME VARIABLES AND FUNCTIONS
 
     [SerializeField] GameObject firstFirstGenBuilding;
     [SerializeField] GameObject firstSecondGenBuilding;
@@ -88,6 +90,8 @@ public class BuildingController : MonoBehaviour
     {
         firstThirdGenBuilding.SetActive(true);
         secondFirstGenBuilding.SetActive(true);
+        firstFirstGenBuilding.SetActive(true);
+        firstSecondGenBuilding.SetActive(true);
         secondSecondGenBuilding.SetActive(false);
         secondThirdGenBuilding.SetActive(false);
        
@@ -108,7 +112,9 @@ public class BuildingController : MonoBehaviour
     private void SetSecondSecondGenBuildingActive()
     {
         firstThirdGenBuilding.SetActive(true);
-        secondFirstGenBuilding.SetActive(false);
+        firstFirstGenBuilding.SetActive(true);
+        firstSecondGenBuilding.SetActive(true);
+        secondFirstGenBuilding.SetActive(true);
         secondSecondGenBuilding.SetActive(true);
         secondThirdGenBuilding.SetActive(false);
        
@@ -128,8 +134,10 @@ public class BuildingController : MonoBehaviour
     private void SetSecondThirdGenBuildingActive()
     {
         firstThirdGenBuilding.SetActive(true);
-        secondFirstGenBuilding.SetActive(false);
-        secondSecondGenBuilding.SetActive(false);
+        firstFirstGenBuilding.SetActive(true);
+        firstSecondGenBuilding.SetActive(true);
+        secondFirstGenBuilding.SetActive(true);
+        secondSecondGenBuilding.SetActive(true);
         secondThirdGenBuilding.SetActive(true);
 
         if (!upgradeParticles2Gen3Played)
@@ -163,7 +171,7 @@ public class BuildingController : MonoBehaviour
     }
     private void SetFirstSecondGenBuildingActive()
     {
-        firstFirstGenBuilding.SetActive(false);
+        firstFirstGenBuilding.SetActive(true);
         firstSecondGenBuilding.SetActive(true);
         firstThirdGenBuilding.SetActive(false);
         
@@ -181,8 +189,8 @@ public class BuildingController : MonoBehaviour
     }
     private void SetFirstThirdGenBuildingActive()
     {
-        firstFirstGenBuilding.SetActive(false);
-        firstSecondGenBuilding.SetActive(false);
+        firstFirstGenBuilding.SetActive(true);
+        firstSecondGenBuilding.SetActive(true);
         firstThirdGenBuilding.SetActive(true);
        
 
