@@ -1,6 +1,8 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityScript.Steps;
 
 public class RocketController : MonoBehaviour
 {
@@ -24,6 +26,13 @@ public class RocketController : MonoBehaviour
     [SerializeField] int stageToGoTo;
     [SerializeField] private float maximumSafeLandingVelocity;
 
+    [SerializeField] private float fuelBurntEverySecond;
+
+    private float remainingFuel;
+    [SerializeField] private float maximumFuelCapacity;
+
+    [SerializeField] private Text fuelIndicator;
+
     enum State {Alive, Dying, Transcending}
     State state = State.Alive;
     
@@ -32,11 +41,20 @@ public class RocketController : MonoBehaviour
     {
         rigidBody = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
+        remainingFuel = maximumFuelCapacity;
     }
 	
 	// Update is called once per frame
-	void Update () 
+	void Update ()
     {
+        
+        fuelIndicator.text = "Fuel: " + remainingFuel.ToString();
+
+        if (remainingFuel == 0)
+        {
+            fuelIndicator.color = Color.red;
+        }
+        
         //Prevents rocket from leaving the screen
         
         Vector3 pos = Camera.main.WorldToViewportPoint (transform.position);
@@ -77,16 +95,39 @@ public class RocketController : MonoBehaviour
 
     private void RespondToThrustInput()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && remainingFuel > 0)
         {
-            ApplyThrust();
+            if (!IsInvoking("burnFuel"))
+            {
+                InvokeRepeating("burnFuel", 0.5f, 1f);
+            }
+
+            if (remainingFuel > 0)
+            {
+                ApplyThrust();
+            }
+            else
+            {
+                audioSource.Stop();
+        
+                mainEngineParticles.Stop();
+                rcsLeftParticles.Stop();
+                rcsRightParticles.Stop();
+            }
 
         }
         else
         {
+            CancelInvoke();
             audioSource.Stop();
             mainEngineParticles.Stop();
         }
+    }
+
+    void burnFuel()
+    {
+        remainingFuel = remainingFuel - fuelBurntEverySecond;
+        print("REMAINING FUEL: " + remainingFuel);
     }
 
     private void ApplyThrust()
@@ -113,7 +154,7 @@ public class RocketController : MonoBehaviour
        // {
        //     case "Friendly":
         //        break;
-        //    case "Finish":
+        //    case "Finish":s
         //        StartSuccessSequence();
        //         break;
        //     default:
@@ -124,10 +165,16 @@ public class RocketController : MonoBehaviour
         if (collision.gameObject.CompareTag("Friendly") && collision.relativeVelocity.y < maximumSafeLandingVelocity)
         {   
             return;
-        } else if (collision.gameObject.CompareTag("Finish") && collision.relativeVelocity.y < maximumSafeLandingVelocity)
+        } else if(collision.gameObject.CompareTag("Fuel"))
+        {
+            remainingFuel = maximumFuelCapacity;
+        }
+      
+        else if (collision.gameObject.CompareTag("Finish") && collision.relativeVelocity.y < maximumSafeLandingVelocity)
         { 
             StartSuccessSequence();
         }
+     
         else
         {
             StartDeathSequence();
