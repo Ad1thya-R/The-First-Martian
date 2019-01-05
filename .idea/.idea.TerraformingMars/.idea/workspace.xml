@@ -23,33 +23,7 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f8b6ce0-4bd5-4dc0-a08a-0bd2cab7d3b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Building_1_lvl_1.blend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Building_1_lvl_1.blend.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main Scene/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main Scene/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main Scene/PlayBtnPressed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main Scene/PlayBtnPressed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/globalgamemanagers.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level1" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level2" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level3" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level4" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level5" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level6" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/level6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets0.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets0.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets0.assets.resS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets1.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets1.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets2.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets2.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets3.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets3.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets4.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets4.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets5.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets5.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets6.assets" beforeDir="false" afterPath="$PROJECT_DIR$/Colonising Mars.app/Contents/Resources/Data/sharedassets6.assets" afterDir="false" />
-    </list>
+    <list default="true" id="9f8b6ce0-4bd5-4dc0-a08a-0bd2cab7d3b8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/PlayBtnPressed.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="301">
-              <caret line="48" column="8" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+              <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
               <folding>
                 <marker date="1546692382414" expanded="false" signature="6:100" ph="..." />
                 <marker date="1546692382414" expanded="true" signature="145:1888" ph="{...}" />
@@ -78,6 +52,22 @@
                 <marker date="1546692382414" expanded="true" signature="1740:1774" ph="{...}" />
                 <marker date="1546692382414" expanded="true" signature="1796:1830" ph="{...}" />
                 <marker date="1546692382414" expanded="true" signature="1852:1886" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/ExitBtnPressed.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <marker date="1546694001026" expanded="false" signature="6:78" ph="..." />
+                <marker date="1546694001026" expanded="true" signature="145:415" ph="{...}" />
+                <marker date="1546694001026" expanded="true" signature="240:294" ph="{...}" />
+                <marker date="1546694001026" expanded="true" signature="349:356" ph="{...}" />
+                <marker date="1546694001026" expanded="true" signature="383:411" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -284,6 +274,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/FuelController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/BtnOnClick.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/Replay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ExitBtnPressed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/PlayBtnPressed.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -299,6 +290,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Scene/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Scene/zoomBtnController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Scene/PlayBtnPressed.cs" />
+        <option value="$PROJECT_DIR$/Assets/ExitBtnPressed.cs" />
       </list>
     </option>
   </component>
@@ -407,12 +399,12 @@
       <workItem from="1546596719956" duration="495000" />
       <workItem from="1546606043135" duration="2068000" />
       <workItem from="1546640407468" duration="1088000" />
-      <workItem from="1546686215822" duration="4032000" />
+      <workItem from="1546686215822" duration="4523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16205000" />
+    <option name="totallyTimeSpent" value="16696000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,7 +652,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/PlayBtnPressed.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
-          <caret line="48" column="8" lean-forward="true" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
           <folding>
             <marker date="1546692382414" expanded="false" signature="6:100" ph="..." />
             <marker date="1546692382414" expanded="true" signature="145:1888" ph="{...}" />
@@ -676,6 +668,20 @@
             <marker date="1546692382414" expanded="true" signature="1740:1774" ph="{...}" />
             <marker date="1546692382414" expanded="true" signature="1796:1830" ph="{...}" />
             <marker date="1546692382414" expanded="true" signature="1852:1886" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/ExitBtnPressed.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <marker date="1546694001026" expanded="false" signature="6:78" ph="..." />
+            <marker date="1546694001026" expanded="true" signature="145:415" ph="{...}" />
+            <marker date="1546694001026" expanded="true" signature="240:294" ph="{...}" />
+            <marker date="1546694001026" expanded="true" signature="349:356" ph="{...}" />
+            <marker date="1546694001026" expanded="true" signature="383:411" ph="{...}" />
           </folding>
         </state>
       </provider>
