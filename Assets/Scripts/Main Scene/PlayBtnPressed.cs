@@ -18,6 +18,26 @@ public class PlayBtnPressed : MonoBehaviour
 	
 	// Use this for initialization
 	void Start () {
+		//if (GameController.gameStage < 1)
+		//{
+		//	_button1.SetActive(false);
+		//	_button2.SetActive(false);
+		//	_button3.SetActive(false);
+		//	_button4.SetActive(false);
+		//	_button5.SetActive(false);
+		//	_button6.SetActive(false);
+		
+		//	PlayBtn.onClick.AddListener(PlayBtnClicked);
+		//}
+		//else
+		//{
+		//	 PlayBtnGameObject.SetActive(false);
+		//}
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
 		if (GameController.gameStage < 1)
 		{
 			_button1.SetActive(false);
@@ -31,14 +51,8 @@ public class PlayBtnPressed : MonoBehaviour
 		}
 		else
 		{
-			 PlayBtnGameObject.SetActive(false);
+			PlayBtnGameObject.SetActive(false);
 		}
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 	void PlayBtnClicked()
