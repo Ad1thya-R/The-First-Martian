@@ -2,7 +2,7 @@
 
 Alpha 1.0
 
-Made with love in Luxembourg, <br />
+Made with love in Luxembourg <br />
 For Luxembourg Tech School A.s.b.l (LTS) <br />
 By <br />
 Leon Liang <br />
@@ -16,9 +16,12 @@ Adithya Ravichandran
 [“Twinkling Stars” by Roald Strauss](http://www.dewfall.dk)
 
 ### Sound: 
-[“Rocket” by dobroride](soundbible.com/1498-Rocket.html) <br />
-[“Explosion7” by Partners in Rhyme](https://www.freesoundeffects.com/free-track/explosion-7-466452/) <br />
-[“SFX Magic” by renatalmar](https://freesound.org/people/renatalmar/sounds/264981/) <br />
+[“Rocket” by dobroride](soundbible.com/1498-Rocket.html)
+
+[“Explosion7” by Partners in Rhyme](https://www.freesoundeffects.com/free-track/explosion-7-466452/) 
+
+[“SFX Magic” by renatalmar](https://freesound.org/people/renatalmar/sounds/264981/)
+
 [“Compressed Air” by ThompsonMan](https://freesound.org/people/ThompsonMan/sounds/237245/)
 
 ### Images:
