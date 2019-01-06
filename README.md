@@ -40,12 +40,12 @@ Licence: n/a <br />
 From Icon Set: Arrow Set <br />
 [freepik.com](https://www.freepik.com/) 
 
-“Volume up icon” by Google <br />
+“Volume up icon” by Google Inc. <br />
 Licence: Free for commercial use <br />
 From Icon Set: Material Audio & Video <br />
 [material.io](https://material.io/)
 
-“Volume off icon” by Google <br />
+“Volume off icon” by Google Inc. <br />
 Licence: Free for commercial use <br />
 From Icon Set: Material Audio & Video <br />
 [material.io](https://material.io/)
