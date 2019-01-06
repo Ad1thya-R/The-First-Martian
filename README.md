@@ -59,3 +59,25 @@ From Icon Set: Miu <br />
 Licence: Creative Commons (Attribution-Share Alike 3.0 Unported) <br />
 From Icon Set: Google Material Design icons <br />
 [material.io](https://material.io/)
+
+"Pause icon" by Google Inc. <br />
+Licence: Free for commercial use <br />
+From Icon Set: Google Material Design icons <br />
+[material.io](https://material.io/)
+
+"Play arrow icon" by Google Inc. <br />
+Licence: Free for commercial use <br />
+From Icon Set: Google Material Design icons <br />
+[material.io](https://material.io/)
+
+"Skip previous icon" by Google Inc. <br />
+Licence: Free for commercial use <br />
+From Icon Set: Google Material Design icons <br />
+[material.io](https://material.io/)
+
+"Replay icon" by Google Inc. <br />
+Licence: Free for commercial use <br />
+From Icon Set: Google Material Design icons <br />
+[material.io](https://material.io/)
+
+
