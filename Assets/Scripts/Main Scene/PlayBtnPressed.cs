@@ -38,6 +38,7 @@ public class PlayBtnPressed : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+		
 		if (GameController.gameStage < 1)
 		{
 			_button1.SetActive(false);
@@ -57,6 +58,7 @@ public class PlayBtnPressed : MonoBehaviour
 
 	void PlayBtnClicked()
 	{
+		
 		PlayBtnGameObject.SetActive(false);
 		
 		Invoke("setBtn1active", 0.1f);

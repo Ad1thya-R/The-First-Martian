@@ -20,8 +20,12 @@
             <e p="zoomBtnController.cs" t="Include" />
           </e>
           <e p="Thrust (1986)" t="Include">
+            <e p="backBtnPressed.cs" t="Include" />
             <e p="FuelController.cs" t="Include" />
             <e p="Oscillator.cs" t="Include" />
+            <e p="pauseBtnClicked.cs" t="Include" />
+            <e p="resumeBtnPressed.cs" t="Include" />
+            <e p="retryButtonPressed.cs" t="Include" />
             <e p="RocketController.cs" t="Include" />
             <e p="TriggerController.cs" t="Include" />
           </e>
