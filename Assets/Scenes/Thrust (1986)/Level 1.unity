@@ -214,6 +214,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114541423232150478, guid: 43972fa94558542768928b8596cd4cae,
+        type: 2}
+      propertyPath: fallingObstacle
+      value: 
+      objectReference: {fileID: 1305424239}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43972fa94558542768928b8596cd4cae, type: 2}
   m_IsPrefabAsset: 0
@@ -807,6 +812,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9103b281969ae479ab77861857df58f4, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1305424239 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1240600820711080, guid: 9103b281969ae479ab77861857df58f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1305424238}
 --- !u!1001 &1312515508
 Prefab:
   m_ObjectHideFlags: 0

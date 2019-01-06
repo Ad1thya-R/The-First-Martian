@@ -15,16 +15,16 @@
             <e p="PlayBtnPressed.cs" t="Include" />
             <e p="Replay.cs" t="Include" />
             <e p="soundController.cs" t="Include" />
+            <e p="State.cs" t="Include" />
             <e p="zoomBtnController.cs" t="Include" />
           </e>
-          <e p="State.cs" t="Include" />
           <e p="Thrust (1986)" t="Include">
             <e p="FuelController.cs" t="Include" />
             <e p="Oscillator.cs" t="Include" />
             <e p="RocketController.cs" t="Include" />
+            <e p="TriggerController.cs" t="Include" />
           </e>
         </e>
-        <e p="TriggerController.cs" t="Include" />
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
@@ -35,6 +35,6 @@
       <e p="TerraformingMars.sln" t="IncludeFlat" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_TerraformingMars.146118904.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_TerraformingMars.946288753.00" t="ExcludeRecursive" />
   </component>
 </project>

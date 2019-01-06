@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerController : MonoBehaviour {
+public class TriggerController : MonoBehaviour
+{
+
+	[SerializeField] private GameObject fallingObstacle;
+	private Rigidbody _rigidbody;
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+		_rigidbody = fallingObstacle.GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -16,6 +21,6 @@ public class TriggerController : MonoBehaviour {
 
 	private void OnTriggerEnter(Collider other)
 	{
-		GameObject.FindWithTag("Falling Obstacle").GetComponent<Rigidbody>().isKinematic = false;
+		_rigidbody.isKinematic = false;		
 	}
 }

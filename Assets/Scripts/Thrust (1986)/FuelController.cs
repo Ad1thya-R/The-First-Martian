@@ -20,6 +20,6 @@ public class FuelController : MonoBehaviour
 
 	private void OnCollisionEnter(Collision other)
 	{
-		_gameObject.SetActive(false);
+		_gameObject.SetActive(false);	
 	}
 }
