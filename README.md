@@ -16,7 +16,7 @@ Adithya Ravichandran
 [“Twinkling Stars” by Roald Strauss](http://www.dewfall.dk)
 
 ### Sound: 
-[“Rocket” by dobroride](soundbible.com/1498-Rocket.html)
+[“Rocket” by dobroride](http://www.soundbible.com/1498-Rocket.html)
 
 [“Explosion7” by Partners in Rhyme](https://www.freesoundeffects.com/free-track/explosion-7-466452/) 
 
