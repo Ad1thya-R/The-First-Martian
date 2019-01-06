@@ -35,7 +35,7 @@ Licence: Creative Commons (Attribution-Share Alike 3.0 Unported) <br />
 From Icon Set: Google Material Design icons <br />
 [material.io](https://material.io/)
 
-“Fullscreen icon (2)” by Freepik. <br />
+“Fullscreen icon (2)” by Freepik <br />
 Licence: n/a <br />
 From Icon Set: Arrow Set <br />
 [freepik.com](https://www.freepik.com/) 
