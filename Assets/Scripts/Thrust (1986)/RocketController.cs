@@ -171,11 +171,7 @@ public class RocketController : MonoBehaviour
         if (collision.gameObject.CompareTag("Friendly") && collision.relativeVelocity.y < maximumSafeLandingVelocity)
         {   
             return;
-        } else if(collision.gameObject.CompareTag("Fuel"))
-        {
-            remainingFuel = maximumFuelCapacity;
         }
-      
         else if (collision.gameObject.CompareTag("Finish") && collision.relativeVelocity.y < maximumSafeLandingVelocity)
         { 
             StartSuccessSequence();
@@ -186,6 +182,14 @@ public class RocketController : MonoBehaviour
             StartDeathSequence();
         }
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Fuel")) {
+            remainingFuel = maximumFuelCapacity;
+            Destroy(other.gameObject);
+        }
     }
 
     private void StartDeathSequence()

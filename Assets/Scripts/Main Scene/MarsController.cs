@@ -5,10 +5,6 @@ using UnityEngine;
 public class MarsController : MonoBehaviour {
 
     [SerializeField] float speed = 1f;
-
-	// Use this for initialization
-	void Start () {
-	}
 	
 	// Update is called once per frame
 	void Update()

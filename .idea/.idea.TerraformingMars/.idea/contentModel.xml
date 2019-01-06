@@ -4,7 +4,6 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="InfoBtnPressed.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Main Scene" t="Include">
             <e p="BtnOnClick.cs" t="Include" />
@@ -12,6 +11,7 @@
             <e p="CameraController.cs" t="Include" />
             <e p="ExitBtnPressed.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
+            <e p="InfoBtnPressed.cs" t="Include" />
             <e p="MarsController.cs" t="Include" />
             <e p="PlayBtnPressed.cs" t="Include" />
             <e p="Replay.cs" t="Include" />
@@ -36,6 +36,6 @@
       <e p="TerraformingMars.sln" t="IncludeFlat" />
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_TerraformingMars.146118904.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_TerraformingMars.946288753.00" t="ExcludeRecursive" />
   </component>
 </project>

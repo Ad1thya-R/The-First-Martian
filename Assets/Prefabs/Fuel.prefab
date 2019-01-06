@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23518344545572014}
   - component: {fileID: 65134418874860080}
   - component: {fileID: 114175435790717944}
-  - component: {fileID: 54117928074711488}
+  - component: {fileID: 54279316769326724}
   m_Layer: 0
   m_Name: Fuel
   m_TagString: Fuel
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1076144042563032}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.1806297, y: 10, z: 0}
+  m_LocalPosition: {x: 9.7, y: 9.47, z: -0.014965296}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -86,7 +86,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1076144042563032}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &54117928074711488
+--- !u!54 &54279316769326724
 Rigidbody:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,7 +108,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1076144042563032}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
