@@ -3,7 +3,7 @@
 Alpha 1.0
 
 Made with ❤️ in Luxembourg <br />
-For Luxembourg Tech School A.s.b.l (LTS) <br />
+For Luxembourg Tech School a.s.b.l (LTS) <br />
 By <br />
 Leon Liang <br />
 Sibylle Lekens <br />
