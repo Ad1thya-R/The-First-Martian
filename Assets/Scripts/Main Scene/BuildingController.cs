@@ -48,27 +48,27 @@ public class BuildingController : MonoBehaviour
 
     private void ShowBuildings()
     {
-        if (GameController.gameStage == 1)
+        if (GameController.gameStage > 0)
         {
             SetFirstFirstGenBuildingActive();
         }
-        else if (GameController.gameStage == 2)
+        if (GameController.gameStage > 1)
         {
             SetFirstSecondGenBuildingActive();
         }
-        else if (GameController.gameStage == 3)
+        if (GameController.gameStage > 2)
         {
             SetFirstThirdGenBuildingActive();
         }
-        else if (GameController.gameStage == 4)
+        if (GameController.gameStage > 3)
         {
             SetSecondFirstGenBuildingActive();
         }
-        else if (GameController.gameStage == 5)
+        if (GameController.gameStage > 4)
         {
             SetSecondSecondGenBuildingActive();
         }
-        else if (GameController.gameStage == 6)
+        if (GameController.gameStage > 5)
         {
             SetSecondThirdGenBuildingActive();
         }

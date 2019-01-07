@@ -16,6 +16,12 @@ public class GameController : MonoBehaviour
 	[SerializeField] public Button _button6;
 
 	[SerializeField] public GameObject replay;
+
+	private void Start()
+	{
+		gameStage = PlayerPrefs.GetInt("gameStageSavedInPlayerPrefs");
+	}
+
 	void Update()
 	{
 		CheckGameStage();
@@ -34,7 +40,7 @@ public class GameController : MonoBehaviour
 					false,
 					false,
 					false,
-					false
+					true
 				);
 
 				break;
@@ -48,7 +54,7 @@ public class GameController : MonoBehaviour
 					false,
 					false,
 					false,
-					false
+					true
 				);
 
 				break;
@@ -62,7 +68,7 @@ public class GameController : MonoBehaviour
 					false,
 					false,
 					false,
-					false
+					true
 				);
 
 				break;
@@ -76,7 +82,7 @@ public class GameController : MonoBehaviour
 					true,
 					false,
 					false,
-					false
+					true
 				);
 
 				break;
@@ -90,7 +96,7 @@ public class GameController : MonoBehaviour
 					false,
 					true,
 					false,
-					false
+					true
 				);
 
 				break;
@@ -104,7 +110,7 @@ public class GameController : MonoBehaviour
 					false,
 					false,
 					true,
-					false
+					true
 				);
 
 				break;

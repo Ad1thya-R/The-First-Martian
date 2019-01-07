@@ -215,7 +215,10 @@ public class RocketController : MonoBehaviour
 
     private void StartSuccessSequence()
     {
+       
         GameController.gameStage = stageToGoTo;
+        PlayerPrefs.SetInt("gameStageSavedInPlayerPrefs", GameController.gameStage);
+        
         state = State.Transcending;
         CancelInvoke();
         audioSource.Stop();

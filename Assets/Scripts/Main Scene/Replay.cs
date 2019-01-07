@@ -24,6 +24,7 @@ public class Replay : MonoBehaviour
 	void BtnClicked()
 	{
 		GameController.gameStage = 0;
+		PlayerPrefs.SetInt("gameStageSavedInPlayerPrefs", GameController.gameStage); 
 		
 		firstFirstGenBuilding.SetActive(false);
 		firstSecondGenBuilding.SetActive(false);
