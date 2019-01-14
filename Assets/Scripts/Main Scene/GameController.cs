@@ -17,14 +17,34 @@ public class GameController : MonoBehaviour
 
 	[SerializeField] public GameObject replay;
 
+	[SerializeField] Text moneyText;
+	[SerializeField] Text costToHire;
+	[SerializeField] private InputField noOfAstronauts;
+	[SerializeField] private Text alertText;
+
 	private void Start()
 	{
-		gameStage = PlayerPrefs.GetInt("gameStageSavedInPlayerPrefs");
+		State.noOfAstronauts = 1;
+		noOfAstronauts.text = State.noOfAstronauts.ToString();
+		
+		if (State.money - 1 * State.costToHire < 0)
+		{
+			alertText.text = "Not enough money left, replay";
+		}
+
+		if (gameStage == 6)
+		{
+			int profit = State.money - 5000000;
+			alertText.text = "You have made " + profit.ToString() + "$ Profit.";
+		}
 	}
 
 	void Update()
 	{
 		CheckGameStage();
+
+		moneyText.text = "$" + State.money.ToString();
+		costToHire.text = "Cost: " + State.costToHire.ToString();
 	}
 
 	void CheckGameStage()

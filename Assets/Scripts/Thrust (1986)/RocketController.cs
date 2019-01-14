@@ -208,8 +208,12 @@ public class RocketController : MonoBehaviour
         }
 
         explosionParticles.Play();
+        
+        global::State.noOfAstronauts = 0;
+        
+        global::State.costToHire = global::State.costToHire + 1000;
 
-        Invoke("RestartLevel", levelLoadDelay);
+        Invoke("ReturnToMainGame", levelLoadDelay);
         
     }
 
@@ -217,7 +221,6 @@ public class RocketController : MonoBehaviour
     {
        
         GameController.gameStage = stageToGoTo;
-        PlayerPrefs.SetInt("gameStageSavedInPlayerPrefs", GameController.gameStage);
         
         state = State.Transcending;
         CancelInvoke();
@@ -233,6 +236,9 @@ public class RocketController : MonoBehaviour
         }
 
         jingleParticles.Play();
+        
+        global::State.money = global::State.money + global::State.noOfAstronauts * 1000000;
+        
         Invoke("ReturnToMainGame", levelLoadDelay);
     }
 
@@ -241,9 +247,9 @@ public class RocketController : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    private void RestartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+    //private void RestartLevel()
+    //{
+    //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    //}
    
 }

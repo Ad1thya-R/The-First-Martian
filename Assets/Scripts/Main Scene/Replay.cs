@@ -22,9 +22,8 @@ public class Replay : MonoBehaviour
 	}
 	
 	void BtnClicked()
-	{
+	{	
 		GameController.gameStage = 0;
-		PlayerPrefs.SetInt("gameStageSavedInPlayerPrefs", GameController.gameStage); 
 		
 		firstFirstGenBuilding.SetActive(false);
 		firstSecondGenBuilding.SetActive(false);
@@ -41,6 +40,9 @@ public class Replay : MonoBehaviour
 		 BuildingController.upgradeParticles2Gen1Played = false;
 		 BuildingController.upgradeParticles2Gen2Played = false;
 		 BuildingController.upgradeParticles2Gen3Played = false;
+
+		 State.money = 5000000;
+		 State.costToHire = 7000;
 
 	}
 }

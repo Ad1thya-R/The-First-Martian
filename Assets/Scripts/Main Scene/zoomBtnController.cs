@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.XR;
 using UnityEngine.UI;
 
 public class zoomBtnController : MonoBehaviour
@@ -11,8 +12,6 @@ public class zoomBtnController : MonoBehaviour
 
 	[SerializeField] private Sprite _zoomInBtn;
 	[SerializeField] private Sprite _zoomOutBtn;
-	
-	[SerializeField] private GameObject _play;
 
 	[SerializeField] private GameObject _level1;
 	[SerializeField] private GameObject _level2;
@@ -28,6 +27,12 @@ public class zoomBtnController : MonoBehaviour
 	[SerializeField] private Button _button4;
 	[SerializeField] private Button _button5;
 	[SerializeField] private Button _button6;
+
+	[SerializeField] private GameObject dollar;
+	[SerializeField] private GameObject noOfAstronauts;
+	[SerializeField] private GameObject noOfAstronautsTextField;
+	[SerializeField] private GameObject costToHire;
+	[SerializeField] private GameObject infoText;
 	
 	public static bool isZoomedIn;
 	
@@ -35,6 +40,10 @@ public class zoomBtnController : MonoBehaviour
 	void Start ()
 	{
 		isZoomedIn = false;
+		dollar.SetActive(true);
+		noOfAstronauts.SetActive(true);
+		noOfAstronautsTextField.SetActive(true);
+		costToHire.SetActive(true);
 		zoomBtn.onClick.AddListener(zoomBtnClicked);
 	}
 	
@@ -47,7 +56,6 @@ public class zoomBtnController : MonoBehaviour
 		if (!isZoomedIn)
 		{
 			mainCamera.transform.position = new Vector3(0f, -1.52473f, 0.84f);
-			_play.SetActive(false);
 			_level1.SetActive(false);
 			_level2.SetActive(false);
 			_level3.SetActive(false);
@@ -55,6 +63,13 @@ public class zoomBtnController : MonoBehaviour
 			_level5.SetActive(false);
 			_level6.SetActive(false);
 			_replay.SetActive(false);
+			
+			dollar.SetActive(false);
+			noOfAstronauts.SetActive(false);
+			noOfAstronautsTextField.SetActive(false);
+			costToHire.SetActive(false);
+			infoText.SetActive(false);
+			
 			zoomBtn.image.overrideSprite = _zoomOutBtn;
 			isZoomedIn = true;
 		}
@@ -62,11 +77,7 @@ public class zoomBtnController : MonoBehaviour
 		{
 			mainCamera.transform.position = new Vector3(0f, -1.52473f, -4.798908f);
 
-			if (GameController.gameStage < 1)
-			{
-				_play.SetActive(true);
-			}
-			else if (GameController.gameStage == 6)
+			if (GameController.gameStage == 6)
 			{
 				_replay.SetActive(true);
 				_level1.SetActive(true);
@@ -75,6 +86,11 @@ public class zoomBtnController : MonoBehaviour
 				_level4.SetActive(true);
 				_level5.SetActive(true);
 				_level6.SetActive(true);
+				dollar.SetActive(true);
+				noOfAstronauts.SetActive(true);
+				noOfAstronautsTextField.SetActive(true);
+				costToHire.SetActive(true);
+				infoText.SetActive(true);
 			}
 			else
 			{
@@ -85,6 +101,12 @@ public class zoomBtnController : MonoBehaviour
 				_level5.SetActive(true);
 				_level6.SetActive(true);
 				_replay.SetActive(false);
+				
+				dollar.SetActive(true);
+				noOfAstronauts.SetActive(true);
+				noOfAstronautsTextField.SetActive(true);
+				costToHire.SetActive(true);
+				infoText.SetActive(true);
 			}
 			
 			zoomBtn.image.overrideSprite = _zoomInBtn;
