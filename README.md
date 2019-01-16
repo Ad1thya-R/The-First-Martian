@@ -81,4 +81,14 @@ Licence: Free for commercial use <br />
 From Icon Set: Google Material Design icons <br />
 [material.io](https://material.io/)
 
+"Next icon" by Google Inc. <br />
+Licence: Free for commercial use <br />
+From Icon Set: Google Material Design icons <br />
+[material.io](https://material.io/)
+
+"Previous icon" by Google Inc. <br />
+Licence: Free for commercial use <br />
+From Icon Set: Google Material Design icons <br />
+[material.io](https://material.io/)
+
 
