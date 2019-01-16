@@ -32,6 +32,7 @@ public class RocketController : MonoBehaviour
     [SerializeField] private float maximumFuelCapacity;
 
     [SerializeField] private Text fuelIndicator;
+    [SerializeField] private Text noOfAstronauts;
 
     enum State {Alive, Dying, Transcending}
     State state = State.Alive;
@@ -47,6 +48,7 @@ public class RocketController : MonoBehaviour
 	// Update is called once per frame
     void Update()
     {
+        noOfAstronauts.text = "Astronauts: " + global::State.noOfAstronauts.ToString();
        
         fuelIndicator.text = "Fuel: " + remainingFuel.ToString();
 
@@ -195,6 +197,7 @@ public class RocketController : MonoBehaviour
     private void StartDeathSequence()
     {
         state = State.Dying;
+        global::State.playerDidWin = false;
         CancelInvoke();
         audioSource.Stop();
         
@@ -209,9 +212,11 @@ public class RocketController : MonoBehaviour
 
         explosionParticles.Play();
         
-        global::State.noOfAstronauts = 0;
+        global::State.investmentCost = global::State.noOfAstronauts * global::State.costToHire;
         
+        global::State.noOfAstronauts = 0;
         global::State.costToHire = global::State.costToHire + 1000;
+     
 
         Invoke("ReturnToMainGame", levelLoadDelay);
         
@@ -221,6 +226,7 @@ public class RocketController : MonoBehaviour
     {
        
         GameController.gameStage = stageToGoTo;
+        global::State.playerDidWin = true;
         
         state = State.Transcending;
         CancelInvoke();
@@ -238,6 +244,7 @@ public class RocketController : MonoBehaviour
         jingleParticles.Play();
         
         global::State.money = global::State.money + global::State.noOfAstronauts * 1000000;
+        global::State.returnCost = global::State.noOfAstronauts * 1000000;
         
         Invoke("ReturnToMainGame", levelLoadDelay);
     }

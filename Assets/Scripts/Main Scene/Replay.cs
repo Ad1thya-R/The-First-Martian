@@ -15,6 +15,9 @@ public class Replay : MonoBehaviour
 	[SerializeField] GameObject secondThirdGenBuilding;
 
 	[SerializeField] private Button btn;
+
+	[SerializeField] private Image alertColor;
+	[SerializeField] private Text alertText;
 	
 	// Use this for initialization
 	void Start () {
@@ -43,6 +46,13 @@ public class Replay : MonoBehaviour
 
 		 State.money = 5000000;
 		 State.costToHire = 7000;
+
+		 State.noOfAstronauts = 1;
+		 alertText.text = "";
+		 GameController.red.a = 0;
+		 GameController.green.a = 0;
+		 alertColor.color = GameController.red;
+		 State.playerDidWin = false;
 
 	}
 }

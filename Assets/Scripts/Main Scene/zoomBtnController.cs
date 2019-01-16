@@ -33,6 +33,10 @@ public class zoomBtnController : MonoBehaviour
 	[SerializeField] private GameObject noOfAstronautsTextField;
 	[SerializeField] private GameObject costToHire;
 	[SerializeField] private GameObject infoText;
+
+	[SerializeField] private GameObject decreaseBtn;
+	[SerializeField] private GameObject increaseBtn;
+	[SerializeField] private GameObject alertColor;
 	
 	public static bool isZoomedIn;
 	
@@ -63,12 +67,16 @@ public class zoomBtnController : MonoBehaviour
 			_level5.SetActive(false);
 			_level6.SetActive(false);
 			_replay.SetActive(false);
+			alertColor.SetActive(false);
 			
 			dollar.SetActive(false);
 			noOfAstronauts.SetActive(false);
 			noOfAstronautsTextField.SetActive(false);
 			costToHire.SetActive(false);
 			infoText.SetActive(false);
+			
+			increaseBtn.SetActive(false);
+			decreaseBtn.SetActive(false);
 			
 			zoomBtn.image.overrideSprite = _zoomOutBtn;
 			isZoomedIn = true;
@@ -91,6 +99,10 @@ public class zoomBtnController : MonoBehaviour
 				noOfAstronautsTextField.SetActive(true);
 				costToHire.SetActive(true);
 				infoText.SetActive(true);
+				alertColor.SetActive(true);
+				
+				increaseBtn.SetActive(true);
+				decreaseBtn.SetActive(true);		
 			}
 			else
 			{
@@ -101,12 +113,16 @@ public class zoomBtnController : MonoBehaviour
 				_level5.SetActive(true);
 				_level6.SetActive(true);
 				_replay.SetActive(false);
+				alertColor.SetActive(true);
 				
 				dollar.SetActive(true);
 				noOfAstronauts.SetActive(true);
 				noOfAstronautsTextField.SetActive(true);
 				costToHire.SetActive(true);
 				infoText.SetActive(true);
+				
+				increaseBtn.SetActive(true);
+				decreaseBtn.SetActive(true);
 			}
 			
 			zoomBtn.image.overrideSprite = _zoomInBtn;
