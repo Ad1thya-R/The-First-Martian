@@ -28,7 +28,7 @@ public class BtnOnClick : MonoBehaviour
 		if (State.noOfAstronauts > 0)
 		{
 			
-			if (State.money - State.noOfAstronauts * State.costToHire > 0)
+			if (State.money - State.noOfAstronauts * State.costToHire >= 0)
 			{
 				State.money = State.money - State.noOfAstronauts * State.costToHire;
 				SceneManager.LoadScene(Int32.Parse(indexOfLvlToLoad));
