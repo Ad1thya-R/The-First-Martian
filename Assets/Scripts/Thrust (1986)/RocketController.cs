@@ -43,6 +43,7 @@ public class RocketController : MonoBehaviour
         rigidBody = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
         remainingFuel = maximumFuelCapacity;
+        global::State.money = global::State.money - global::State.noOfAstronauts * global::State.costToHire; 
     }
 	
 	// Update is called once per frame

@@ -771,7 +771,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 287, y: 30}
+  m_AnchoredPosition: {x: 259, y: 30}
   m_SizeDelta: {x: 170, y: 30}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &300201341
@@ -3215,7 +3215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -132, y: 30}
+  m_AnchoredPosition: {x: -125, y: 30}
   m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1247102337
@@ -3250,7 +3250,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: "$5000000 \n"
+  m_Text: "$41300000 \n"
 --- !u!222 &1247102338
 CanvasRenderer:
   m_ObjectHideFlags: 0
