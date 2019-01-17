@@ -43,7 +43,7 @@ public class RocketController : MonoBehaviour
         rigidBody = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
         remainingFuel = maximumFuelCapacity;
-        global::State.money = global::State.money - global::State.noOfAstronauts * global::State.costToHire; 
+        
     }
 	
 	// Update is called once per frame
@@ -215,8 +215,10 @@ public class RocketController : MonoBehaviour
         
         global::State.investmentCost = global::State.noOfAstronauts * global::State.costToHire;
         
+        global::State.money = global::State.money - global::State.noOfAstronauts * global::State.costToHire; 
+        
         global::State.noOfAstronauts = 0;
-        global::State.costToHire = global::State.costToHire + 1000;
+        global::State.costToHire = global::State.costToHire + 100000;
      
 
         Invoke("ReturnToMainGame", levelLoadDelay);
@@ -243,6 +245,8 @@ public class RocketController : MonoBehaviour
         }
 
         jingleParticles.Play();
+        
+        global::State.money = global::State.money - global::State.noOfAstronauts * global::State.costToHire; 
         
         global::State.money = global::State.money + global::State.noOfAstronauts * 1000000;
         global::State.returnCost = global::State.noOfAstronauts * 1000000;
