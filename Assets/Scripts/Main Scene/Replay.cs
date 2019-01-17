@@ -45,7 +45,7 @@ public class Replay : MonoBehaviour
 		 BuildingController.upgradeParticles2Gen3Played = false;
 
 		 State.money = 5000000;
-		 State.costToHire = 7000;
+		 State.costToHire = 700000;
 
 		 State.noOfAstronauts = 1;
 		 alertText.text = "";
