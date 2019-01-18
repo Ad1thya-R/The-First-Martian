@@ -59,7 +59,7 @@ public class GameController : MonoBehaviour
 			alertText.color = Color.black;
 			alertText.text = "You made " + State.returnCost.ToString() + "$.";
 		} 
-		else if (!State.playerDidWin)
+		else if (!State.playerDidWin && gameStage != 0)
 		{
 			red.a = 1;
 			alertColor.color = red;

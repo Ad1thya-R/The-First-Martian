@@ -10,7 +10,7 @@ public static class State
     public static int costToHire = 700000;
     public static int money = 5000000;
 
-    public static bool playerDidWin = true;
+    public static bool playerDidWin = false;
     public static int investmentCost;
     public static int returnCost;
 }
