@@ -521,6 +521,62 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfeb6f66b74140a7b9b326d9ae9e38e, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &453124443
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4153313745250034, guid: 43972fa94558542768928b8596cd4cae, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153313745250034, guid: 43972fa94558542768928b8596cd4cae, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 8.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153313745250034, guid: 43972fa94558542768928b8596cd4cae, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153313745250034, guid: 43972fa94558542768928b8596cd4cae, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153313745250034, guid: 43972fa94558542768928b8596cd4cae, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153313745250034, guid: 43972fa94558542768928b8596cd4cae, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153313745250034, guid: 43972fa94558542768928b8596cd4cae, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153313745250034, guid: 43972fa94558542768928b8596cd4cae, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4153313745250034, guid: 43972fa94558542768928b8596cd4cae, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.53452694
+      objectReference: {fileID: 0}
+    - target: {fileID: 114541423232150478, guid: 43972fa94558542768928b8596cd4cae,
+        type: 2}
+      propertyPath: fallingObstacle
+      value: 
+      objectReference: {fileID: 1387830687}
+    - target: {fileID: 23164779800158124, guid: 43972fa94558542768928b8596cd4cae,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 43972fa94558542768928b8596cd4cae, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &510528424
 Prefab:
   m_ObjectHideFlags: 0
@@ -1148,9 +1204,34 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 64673532212696294, guid: 01f7026e99e614a0ba66a6cecdddf8c8,
+        type: 2}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f7026e99e614a0ba66a6cecdddf8c8, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1387830687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1472485620253566, guid: 01f7026e99e614a0ba66a6cecdddf8c8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1387830686}
+--- !u!54 &1387830688
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1387830687}
+  serializedVersion: 2
+  m_Mass: 1000
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1393228599
 Prefab:
   m_ObjectHideFlags: 0
@@ -1214,8 +1295,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1992669676666566, guid: f6f64c96c69c34f40817c17159a27837,
     type: 2}
   m_PrefabInternal: {fileID: 563131562}
---- !u!64 &1420570857
-MeshCollider:
+--- !u!135 &1420570854
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -1223,11 +1304,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300094, guid: adb175727048a4533b94d94f23d2128a, type: 3}
+  serializedVersion: 2
+  m_Radius: 1.0000002
+  m_Center: {x: 0, y: 2.2026142e-13, z: -1}
 --- !u!1001 &1443532500
 Prefab:
   m_ObjectHideFlags: 0
