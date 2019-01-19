@@ -199,6 +199,9 @@ public class RocketController : MonoBehaviour
     {
         state = State.Dying;
         global::State.playerDidWin = false;
+        
+        global::State.showHowMuchMoneyPlayerMade = true;
+        
         CancelInvoke();
         audioSource.Stop();
         
@@ -230,6 +233,8 @@ public class RocketController : MonoBehaviour
        
         GameController.gameStage = stageToGoTo;
         global::State.playerDidWin = true;
+
+        global::State.showHowMuchMoneyPlayerMade = true;
         
         state = State.Transcending;
         CancelInvoke();
@@ -249,7 +254,7 @@ public class RocketController : MonoBehaviour
         global::State.money = global::State.money - global::State.noOfAstronauts * global::State.costToHire; 
         
         global::State.money = global::State.money + global::State.noOfAstronauts * 1000000;
-        global::State.returnCost = global::State.noOfAstronauts * 1000000;
+        global::State.returnCost = global::State.noOfAstronauts * 1000000 - global::State.noOfAstronauts * global::State.costToHire;
         
         Invoke("ReturnToMainGame", levelLoadDelay);
     }

@@ -23,8 +23,6 @@ public class backBtnPressed : MonoBehaviour
 	void BackBtnPressed()
 	{
 		Time.timeScale = 1;
-		State.money = State.money + State.noOfAstronauts * State.costToHire;
-		
 		SceneManager.LoadScene(0);
 	}
 }

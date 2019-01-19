@@ -47,6 +47,7 @@ public class Replay : MonoBehaviour
 		 State.money = 5000000;
 		 State.costToHire = 700000;
 
+		 State.showHowMuchMoneyPlayerMade = false;
 		 State.noOfAstronauts = 1;
 		 alertText.text = "";
 		 GameController.red.a = 0;
