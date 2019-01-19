@@ -617,6 +617,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114088013127994680, guid: f6f64c96c69c34f40817c17159a27837,
+        type: 2}
+      propertyPath: stageToGoTo
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 135771077696766070, guid: f6f64c96c69c34f40817c17159a27837, type: 2}
     - {fileID: 135501775858466780, guid: f6f64c96c69c34f40817c17159a27837, type: 2}
@@ -1963,7 +1968,7 @@ RectTransform:
   - {fileID: 872663836}
   - {fileID: 2097201560}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

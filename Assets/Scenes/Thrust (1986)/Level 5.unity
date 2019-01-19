@@ -617,6 +617,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114088013127994680, guid: f6f64c96c69c34f40817c17159a27837,
+        type: 2}
+      propertyPath: stageToGoTo
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 135771077696766070, guid: f6f64c96c69c34f40817c17159a27837, type: 2}
     - {fileID: 135501775858466780, guid: f6f64c96c69c34f40817c17159a27837, type: 2}
