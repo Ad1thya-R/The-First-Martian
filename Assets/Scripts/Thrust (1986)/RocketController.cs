@@ -53,14 +53,14 @@ public class RocketController : MonoBehaviour
        
         fuelIndicator.text = "Fuel: " + remainingFuel.ToString();
 
-        if (remainingFuel < 10)
-        {
-            fuelIndicator.color = Color.red;
-        }
-        else
-        {
-            fuelIndicator.color = Color.white;
-        }
+        //if (remainingFuel < 10)
+        //{
+        //    fuelIndicator.color = Color.red;
+        //}
+        //else
+        //{
+        //    fuelIndicator.color = Color.white;
+        //}
 
         //Prevents rocket from leaving the screen
 
