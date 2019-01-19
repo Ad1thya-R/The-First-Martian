@@ -27,6 +27,7 @@ public class GameController : MonoBehaviour
 	[SerializeField] private Image alertColor;
 
 	private int profit = State.money - 5000000;
+	private int lostMoney = (State.money - 5000000) * -1;
 	
 	private void Start()
 	{
@@ -51,37 +52,28 @@ public class GameController : MonoBehaviour
 		} 
 		else if (State.showHowMuchMoneyPlayerMade && gameStage == 6)
 		{
-			if (profit > 0)
+			if (State.money > 5000000)
 			{
 				green.a = 1;
 				alertColor.color = green;
 				alertText.color = Color.black;
-				
+				alertText.text = "Game over. Your company made " + profit.ToString() + "$ profit. (max: 36300000$)";
 			}
-			else
+			else if (State.money < 5000000)
 			{
 				red.a = 1;
 				alertColor.color = red;
 				alertText.color = Color.white;
+				alertText.text = "Game over. Your company made " + lostMoney.ToString() + "$ profit. (max: 36300000$)";
 			}
-			alertText.text = "Congratulations! You made " + profit + "$/36300000$ profit";
+			
 		}
 		else if (State.showHowMuchMoneyPlayerMade && State.costToHire > State.money)
 		{
-			if (profit < 0)
-			{
-				red.a = 1;
-				alertColor.color = red;
-				alertText.color = Color.white;
-				alertText.text = "Game over. You made " + profit + "$/36300000$ profit";
-			} 
-			else if (profit > 0)
-			{
-				green.a = 1;
-				alertColor.color = green;
-				alertText.color = Color.black;
-				alertText.text = "Game over. You made " + profit + "$/36300000$ profit";
-			}
+			red.a = 1;
+			alertColor.color = red;
+			alertText.color = Color.white;
+			alertText.text = "Game over. Your company lost " + lostMoney.ToString() + "$.";
 			
 		}
 		else if (State.showHowMuchMoneyPlayerMade)
@@ -91,13 +83,13 @@ public class GameController : MonoBehaviour
 				green.a = 1;
 				alertColor.color = green;
 				alertText.color = Color.black;
-				alertText.text = "+" + State.returnCost.ToString();
+				alertText.text = "+" + State.returnCost.ToString() + "$";
 			} else if (!State.playerDidWin)
 			{
 				red.a = 1;
 				alertColor.color = red;
 				alertText.color = Color.white;
-				alertText.text = "-" + State.investmentCost.ToString();
+				alertText.text = "-" + State.investmentCost.ToString() + "$";
 			}
 		}
 		else
