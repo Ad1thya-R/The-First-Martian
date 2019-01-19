@@ -13,17 +13,17 @@ EditorBuildSettings:
     guid: 3be7ecad2d9e245b391f9b199735dd9f
   - enabled: 1
     path: Assets/Scenes/Thrust (1986)/Level 2.unity
-    guid: c1efdab9edc394778a38961dc83e049e
+    guid: f83782f7364844931a300778480c3d05
   - enabled: 1
     path: Assets/Scenes/Thrust (1986)/Level 3.unity
-    guid: c7c474d2cde8843138e443ebdee051af
+    guid: 3b34cce95ee2f4228930f6642a05a6f4
   - enabled: 1
     path: Assets/Scenes/Thrust (1986)/Level 4.unity
-    guid: 7cf3623f752324d54a5a646d6a8f3f1b
+    guid: 1d6d79cff39684006aaeae825b4f02b8
   - enabled: 1
     path: Assets/Scenes/Thrust (1986)/Level 5.unity
-    guid: 042b630ac0bbf47caab67c0b4ca50b4f
+    guid: 0f29abb5969984fc7a225175d3e3aa38
   - enabled: 1
     path: Assets/Scenes/Thrust (1986)/Level 6.unity
-    guid: 82018e10403db436880c7e612c2ffa74
+    guid: 865a816191990460d9fe70b3147bdbf3
   m_configObjects: {}
