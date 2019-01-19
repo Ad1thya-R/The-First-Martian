@@ -11,6 +11,12 @@ Leon Liang (Project Manager, Chief Programmer) <br />
 Adithya Ravichandran (Chief Designer) <br />
 Nico Bachner (Designer)
 
+## Controls:
+
+**Spacebar** - Up <br />
+**A** - Left <br />
+**D** - Right 
+
 ## Credits:
 
 ### Music:
