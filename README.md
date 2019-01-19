@@ -9,7 +9,7 @@ By <br />
 Sibylle Lekens (Chief Project Manager, Designer) <br />
 Leon Liang (Project Manager, Chief Programmer) <br />
 Adithya Ravichandran (Chief Designer) <br />
-Nico Bachner (Designer)
+Nico Bachner (Chief Designer)
 
 ## Credits:
 
