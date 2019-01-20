@@ -64,7 +64,7 @@ public class GameController : MonoBehaviour
 				red.a = 1;
 				alertColor.color = red;
 				alertText.color = Color.white;
-				alertText.text = "Game over. Your company made " + lostMoney.ToString() + "$ profit. (max: 36300000$)";
+				alertText.text = "Game over. Your company lost " + lostMoney.ToString() + "$.";
 			}
 			
 		}
