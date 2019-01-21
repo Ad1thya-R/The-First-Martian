@@ -221,7 +221,7 @@ public class RocketController : MonoBehaviour
         global::State.money = global::State.money - global::State.noOfAstronauts * global::State.costToHire; 
         
         global::State.noOfAstronauts = 0;
-        global::State.costToHire = global::State.costToHire + 100000;
+        global::State.costToHire = global::State.costToHire + 10000;
      
 
         Invoke("ReturnToMainGame", levelLoadDelay);
