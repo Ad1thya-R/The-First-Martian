@@ -261,7 +261,7 @@ public class RocketController : MonoBehaviour
 
     private void ReturnToMainGame()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     //private void RestartLevel()

@@ -484,7 +484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 185365159}
-  indexOfLvlToLoad: 2
+  indexOfLvlToLoad: 3
   alertText: {fileID: 2087305027}
   alertColor: {fileID: 71381222}
 --- !u!114 &185365159
@@ -2065,7 +2065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 831512728}
-  indexOfLvlToLoad: 4
+  indexOfLvlToLoad: 5
   alertText: {fileID: 2087305027}
   alertColor: {fileID: 71381222}
 --- !u!114 &831512728
@@ -2657,7 +2657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1097067427}
-  indexOfLvlToLoad: 1
+  indexOfLvlToLoad: 2
   alertText: {fileID: 2087305027}
   alertColor: {fileID: 71381222}
 --- !u!1001 &1105839627
@@ -3497,7 +3497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1451876995}
-  indexOfLvlToLoad: 3
+  indexOfLvlToLoad: 4
   alertText: {fileID: 2087305027}
   alertColor: {fileID: 71381222}
 --- !u!114 &1451876995
@@ -3625,7 +3625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1496762369}
-  indexOfLvlToLoad: 5
+  indexOfLvlToLoad: 6
   alertText: {fileID: 2087305027}
   alertColor: {fileID: 71381222}
 --- !u!114 &1496762369
@@ -4341,7 +4341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1780388114}
-  indexOfLvlToLoad: 6
+  indexOfLvlToLoad: 7
   alertText: {fileID: 2087305027}
   alertColor: {fileID: 71381222}
 --- !u!114 &1780388114
