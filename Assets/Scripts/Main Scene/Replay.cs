@@ -28,7 +28,8 @@ public class Replay : MonoBehaviour
 	void BtnClicked()
 	{
 		replayQuery = true;
-		alertColor.color = new Color(0.8f, 0.2f, 0f, 1f);
+		alertColor.color = new Color(1f, 0.3f, 0f, 1f);
+		alertText.color = Color.white;
 		alertText.text = "Are you sure you want to restart? y / n";
 	}
 
