@@ -26,6 +26,7 @@ public class Replay : MonoBehaviour
 	
 	void BtnClicked()
 	{	
+		
 		GameController.gameStage = 0;
 		
 		firstFirstGenBuilding.SetActive(false);

@@ -53,15 +53,6 @@ public class RocketController : MonoBehaviour
        
         fuelIndicator.text = "Fuel: " + remainingFuel.ToString();
 
-        //if (remainingFuel < 10)
-        //{
-        //    fuelIndicator.color = Color.red;
-        //}
-        //else
-        //{
-        //    fuelIndicator.color = Color.white;
-        //}
-
         //Prevents rocket from leaving the screen
 
         Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
@@ -104,7 +95,7 @@ public class RocketController : MonoBehaviour
 
     private void RespondToThrustInput()
     {
-        if (Input.GetKey(KeyCode.Space) && remainingFuel > 0)
+        if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)) && remainingFuel > 0)
         {
             if (!IsInvoking("burnFuel"))
             {
