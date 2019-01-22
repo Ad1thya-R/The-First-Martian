@@ -44,13 +44,13 @@ public class GameController : MonoBehaviour
 	{
 		CheckGameStage();
 		
-		if (State.money - State.noOfAstronauts * State.costToHire < 0 && State.costToHire < State.money)
+		if (Replay.replayQuery == false && State.money - State.noOfAstronauts * State.costToHire < 0 && State.costToHire < State.money)
 		{
 			alertText.color = Color.black;
 			alertText.text = "Not enough money to hire " + State.noOfAstronauts + " astronauts.";
 			alertColor.color = Color.yellow;
 		} 
-		else if (State.showHowMuchMoneyPlayerMade && gameStage == 6)
+		else if (Replay.replayQuery == false && State.showHowMuchMoneyPlayerMade && gameStage == 6)
 		{
 			if (State.money > 5000000)
 			{
@@ -68,7 +68,7 @@ public class GameController : MonoBehaviour
 			}
 			
 		}
-		else if (State.showHowMuchMoneyPlayerMade && State.costToHire > State.money)
+		else if (Replay.replayQuery == false && State.showHowMuchMoneyPlayerMade && State.costToHire > State.money)
 		{
 			red.a = 1;
 			alertColor.color = red;
@@ -76,7 +76,7 @@ public class GameController : MonoBehaviour
 			alertText.text = "Game over. Your company lost " + lostMoney.ToString() + "$.";
 			
 		}
-		else if (State.showHowMuchMoneyPlayerMade)
+		else if (Replay.replayQuery == false && State.showHowMuchMoneyPlayerMade)
 		{
 			if (State.playerDidWin)
 			{
@@ -92,7 +92,7 @@ public class GameController : MonoBehaviour
 				alertText.text = "-" + State.investmentCost.ToString() + "$";
 			}
 		}
-		else
+		else if (Replay.replayQuery == false)
 		{
 			red.a = 0;
 			alertColor.color = red;
