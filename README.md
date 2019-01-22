@@ -13,7 +13,7 @@ Nico Bachner (Chief Designer)
 
 ## Controls:
 
-**W** - Up <br />
+**W or SPACE** - Up <br />
 **A** - Left <br />
 **D** - Right 
 
