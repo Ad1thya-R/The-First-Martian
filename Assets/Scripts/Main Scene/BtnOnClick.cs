@@ -32,24 +32,10 @@ public class BtnOnClick : MonoBehaviour
 			alertColor.color = GameController.red;
 			
 			
-			if (State.money - State.noOfAstronauts * State.costToHire >= 0)
+			if (State.money - State.noOfAstronauts * State.costToHire >= 0 && !State.showInstructions)
 			{
 				SceneManager.LoadScene(Int32.Parse(indexOfLvlToLoad));
 			} 
-			//else if (State.money - 1 * State.costToHire < 0)
-			//{
-			//	GameController.red.a = 0;
-			//	alertColor.color = GameController.red;
-			//	alertText.color = Color.white;
-			//	alertText.text = "Not enough money left, replay";
-			//}
-			//else if (State.money - State.noOfAstronauts * State.costToHire < 0)
-			//{
-			//	GameController.red.a = 0;
-			//	alertColor.color = GameController.red;
-			//	alertText.color = Color.white;
-			//	alertText.text = "Not enough money to hire " + State.noOfAstronauts + " astronauts.";
-			//} 
 			
 		}
 		else if(State.noOfAstronauts <= 0)

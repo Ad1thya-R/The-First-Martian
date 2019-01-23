@@ -6,13 +6,14 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="BtnClicked.cs" t="Include" />
+          <e p="InfoBtnPressed.cs" t="Include" />
           <e p="Main Scene" t="Include">
             <e p="BtnOnClick.cs" t="Include" />
             <e p="BuildingController.cs" t="Include" />
             <e p="CameraController.cs" t="Include" />
             <e p="ExitBtnPressed.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
-            <e p="InfoBtnPressed.cs" t="Include" />
+            <e p="infoBtn.cs" t="Include" />
             <e p="MarsController.cs" t="Include" />
             <e p="onAddBtnPressed.cs" t="Include" />
             <e p="onDecreaseBtnPressed.cs" t="Include" />
