@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class TextController : MonoBehaviour
 {
+	private Color hackingGreen;
+	
 	public static int instructionIndex = 0;
 
 	[SerializeField] GameObject instructionsGO;
@@ -24,6 +26,10 @@ public class TextController : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+		
+		hackingGreen = new Color(0.13f, 0.76f, 0.02f);
+
+		instructions.color = hackingGreen;
 		
 		instructions.text = "markwatney$ Establishing connection to Earth... \nmarkwatney$ Signal strength: " + signalStrength + "%";
 

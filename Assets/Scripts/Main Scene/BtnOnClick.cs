@@ -42,7 +42,7 @@ public class BtnOnClick : MonoBehaviour
 			}
 			else if(State.noOfAstronauts <= 0)
 			{
-				GameController.red.a = 0;
+				GameController.red.a = 1;
 				alertColor.color = GameController.red;
 				alertText.color = Color.white;
 				alertText.text = "You have to at least hire one astronaut!";
