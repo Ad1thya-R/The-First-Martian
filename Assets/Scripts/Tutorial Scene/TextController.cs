@@ -35,6 +35,7 @@ public class TextController : MonoBehaviour
 
 		if (!IsInvoking("IncreaseInstructionIndex") && done)
 		{
+			State.instructionsArePlaying = true;
 			InvokeRepeating("IncreaseInstructionIndex", 2f, 3f);
 		}
 
@@ -69,7 +70,6 @@ public class TextController : MonoBehaviour
 		
 		if (instructionIndex != 17 && !skipBtnPressed.skipButtonHasBeenPressed)
 		{
-			State.instructionsArePlaying = true;
 			instructionIndex++;
 		}
 		else 
