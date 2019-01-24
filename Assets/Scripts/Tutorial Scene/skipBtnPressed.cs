@@ -23,6 +23,11 @@ public class skipBtnPressed : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+		if (!State.instructionsArePlaying)
+		{
+			skipButtonGO.SetActive(false);
+		}
+		
 		skipButton.onClick.AddListener(SkipBtnPressed);
 	}
 

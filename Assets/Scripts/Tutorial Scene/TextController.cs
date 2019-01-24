@@ -12,8 +12,9 @@ public class TextController : MonoBehaviour
 	[SerializeField] private Text instructions;
 	
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+		State.instructionsArePlaying = true;
 	}
 	
 	// Update is called once per frame
