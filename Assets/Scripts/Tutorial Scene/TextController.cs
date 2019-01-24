@@ -19,7 +19,7 @@ public class TextController : MonoBehaviour
 	{
 		State.instructionsArePlaying = true;
 		
-		InvokeRepeating("IncreaseSignalStrength", 0f, 0.1f);
+		InvokeRepeating("IncreaseSignalStrength", 2f, 0.1f);
 	}
 	
 	// Update is called once per frame
