@@ -18,7 +18,11 @@ public class pauseBtnClicked : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (Input.GetKey(KeyCode.Escape))
+		{
+			Time.timeScale = 0;
+			pausePanel.SetActive(true);
+		}
 	}
 
 	void PauseBtnClicked()

@@ -23,7 +23,9 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f8b6ce0-4bd5-4dc0-a08a-0bd2cab7d3b8" name="Default Changelist" comment="" />
+    <list default="true" id="9f8b6ce0-4bd5-4dc0-a08a-0bd2cab7d3b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/pauseBtnClicked.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/pauseBtnClicked.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +165,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/backBtnPressed.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <marker date="1548333964053" expanded="false" signature="6:170" ph="..." />
                 <marker date="1548333964053" expanded="true" signature="215:506" ph="{...}" />
@@ -176,6 +178,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/pauseBtnClicked.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+              <folding>
+                <marker date="1548337487462" expanded="false" signature="6:100" ph="..." />
+                <marker date="1548337487462" expanded="true" signature="146:610" ph="{...}" />
+                <marker date="1548337487462" expanded="true" signature="284:368" ph="{...}" />
+                <marker date="1548337487462" expanded="true" signature="423:525" ph="{...}" />
+                <marker date="1548337487462" expanded="true" signature="460:522" ph="{...}" />
+                <marker date="1548337487462" expanded="true" signature="550:608" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/skipBtnPressed.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -193,35 +212,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/ExitBtnPressed.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1548265494105" expanded="false" signature="6:100" ph="..." />
-                <marker date="1548265494105" expanded="true" signature="145:415" ph="{...}" />
-                <marker date="1548265494105" expanded="true" signature="240:294" ph="{...}" />
-                <marker date="1548265494105" expanded="true" signature="349:356" ph="{...}" />
-                <marker date="1548265494105" expanded="true" signature="383:411" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/TextController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="411">
+              <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
               <folding>
-                <marker date="1548335217109" expanded="false" signature="6:135" ph="..." />
-                <marker date="1548335217109" expanded="true" signature="180:1026" ph="{...}" />
-                <marker date="1548335217109" expanded="true" signature="364:371" ph="{...}" />
-                <marker date="1548335217109" expanded="true" signature="426:776" ph="{...}" />
-                <marker date="1548335217109" expanded="true" signature="538:602" ph="{...}" />
-                <marker date="1548335217109" expanded="true" signature="735:773" ph="{...}" />
-                <marker date="1548335217109" expanded="true" signature="812:1022" ph="{...}" />
-                <marker date="1548335217109" expanded="true" signature="892:963" ph="{...}" />
-                <marker date="1548335217109" expanded="true" signature="970:1019" ph="{...}" />
+                <marker date="1548337068484" expanded="false" signature="6:135" ph="..." />
+                <marker date="1548337068484" expanded="true" signature="180:1107" ph="{...}" />
+                <marker date="1548337068484" expanded="true" signature="364:371" ph="{...}" />
+                <marker date="1548337068484" expanded="true" signature="426:776" ph="{...}" />
+                <marker date="1548337068484" expanded="true" signature="538:602" ph="{...}" />
+                <marker date="1548337068484" expanded="true" signature="735:773" ph="{...}" />
+                <marker date="1548337068484" expanded="true" signature="812:1103" ph="{...}" />
+                <marker date="1548337068484" expanded="true" signature="892:963" ph="{...}" />
+                <marker date="1548337068484" expanded="true" signature="971:1020" ph="{...}" />
+                <marker date="1548337068484" expanded="true" signature="1051:1100" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -291,14 +296,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Scene/onAddBtnPressed.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Scene/BtnOnClick.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Scene/zoomBtnController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/backBtnPressed.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Scene/Replay.cs" />
-        <option value="$PROJECT_DIR$/Assets/TextController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/RocketController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Scene/GameController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Scene/State.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Scene/infoBtn.cs" />
         <option value="$PROJECT_DIR$/Assets/skipBtnPressed.cs" />
+        <option value="$PROJECT_DIR$/Assets/TextController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/backBtnPressed.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/pauseBtnClicked.cs" />
       </list>
     </option>
   </component>
@@ -429,12 +435,12 @@
       <workItem from="1547977718108" duration="293000" />
       <workItem from="1548095891824" duration="74000" />
       <workItem from="1548100977574" duration="6281000" />
-      <workItem from="1548267452770" duration="20892000" />
+      <workItem from="1548267452770" duration="21225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84179000" />
+    <option name="totallyTimeSpent" value="84512000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -508,20 +514,6 @@
     <entry file="file://$PROJECT_DIR$/Assets/pauseBtnClicked.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/backBtnPressed.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/retryButtonPressed.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/pauseBtnClicked.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <marker date="1546807503416" expanded="false" signature="6:100" ph="..." />
-            <marker date="1546807503416" expanded="true" signature="146:515" ph="{...}" />
-            <marker date="1546807503416" expanded="true" signature="284:368" ph="{...}" />
-            <marker date="1546807503416" expanded="true" signature="423:430" ph="{...}" />
-            <marker date="1546807503416" expanded="true" signature="455:513" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/astronautTextField.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/increaseBtnPressed.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/Oscillator.cs">
@@ -764,38 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/backBtnPressed.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <marker date="1548333964053" expanded="false" signature="6:170" ph="..." />
-            <marker date="1548333964053" expanded="true" signature="215:506" ph="{...}" />
-            <marker date="1548333964053" expanded="true" signature="310:361" ph="{...}" />
-            <marker date="1548333964053" expanded="true" signature="416:423" ph="{...}" />
-            <marker date="1548333964053" expanded="true" signature="447:504" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/TextController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <marker date="1548335217109" expanded="false" signature="6:135" ph="..." />
-            <marker date="1548335217109" expanded="true" signature="180:1026" ph="{...}" />
-            <marker date="1548335217109" expanded="true" signature="364:371" ph="{...}" />
-            <marker date="1548335217109" expanded="true" signature="426:776" ph="{...}" />
-            <marker date="1548335217109" expanded="true" signature="538:602" ph="{...}" />
-            <marker date="1548335217109" expanded="true" signature="735:773" ph="{...}" />
-            <marker date="1548335217109" expanded="true" signature="812:1022" ph="{...}" />
-            <marker date="1548335217109" expanded="true" signature="892:963" ph="{...}" />
-            <marker date="1548335217109" expanded="true" signature="970:1019" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/RocketController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1850">
@@ -922,6 +882,54 @@
             <marker date="1548336657421" expanded="true" signature="465:507" ph="{...}" />
             <marker date="1548336657421" expanded="true" signature="565:619" ph="{...}" />
             <marker date="1548336657421" expanded="true" signature="643:2274" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/TextController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding>
+            <marker date="1548337068484" expanded="false" signature="6:135" ph="..." />
+            <marker date="1548337068484" expanded="true" signature="180:1107" ph="{...}" />
+            <marker date="1548337068484" expanded="true" signature="364:371" ph="{...}" />
+            <marker date="1548337068484" expanded="true" signature="426:776" ph="{...}" />
+            <marker date="1548337068484" expanded="true" signature="538:602" ph="{...}" />
+            <marker date="1548337068484" expanded="true" signature="735:773" ph="{...}" />
+            <marker date="1548337068484" expanded="true" signature="812:1103" ph="{...}" />
+            <marker date="1548337068484" expanded="true" signature="892:963" ph="{...}" />
+            <marker date="1548337068484" expanded="true" signature="971:1020" ph="{...}" />
+            <marker date="1548337068484" expanded="true" signature="1051:1100" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/backBtnPressed.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <marker date="1548333964053" expanded="false" signature="6:170" ph="..." />
+            <marker date="1548333964053" expanded="true" signature="215:506" ph="{...}" />
+            <marker date="1548333964053" expanded="true" signature="310:361" ph="{...}" />
+            <marker date="1548333964053" expanded="true" signature="416:423" ph="{...}" />
+            <marker date="1548333964053" expanded="true" signature="447:504" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/pauseBtnClicked.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <folding>
+            <marker date="1548337487462" expanded="false" signature="6:100" ph="..." />
+            <marker date="1548337487462" expanded="true" signature="146:610" ph="{...}" />
+            <marker date="1548337487462" expanded="true" signature="284:368" ph="{...}" />
+            <marker date="1548337487462" expanded="true" signature="423:525" ph="{...}" />
+            <marker date="1548337487462" expanded="true" signature="460:522" ph="{...}" />
+            <marker date="1548337487462" expanded="true" signature="550:608" ph="{...}" />
           </folding>
         </state>
       </provider>
