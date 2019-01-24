@@ -19,11 +19,6 @@ public class Replay : MonoBehaviour
 
 	[SerializeField] private Image alertColor;
 	[SerializeField] private Text alertText;
-
-	[SerializeField] private Text instructions;
-	
-	[SerializeField] private GameObject skipButtonGO;
-
 	
 	// Use this for initialization
 	void Start () {
@@ -71,12 +66,6 @@ public class Replay : MonoBehaviour
 			GameController.green.a = 0;
 			alertColor.color = GameController.red;
 			State.playerDidWin = false;
-			State.userIsPlayingForTheFirstTime = true;
-			GameController.instructionIndex = 0;
-			instructions.text = "";
-			State.showInstructions = true;
-			skipButtonGO.SetActive(true);
-
 		} 
 		else if (replayQuery && Input.GetKey(KeyCode.N))
 		{

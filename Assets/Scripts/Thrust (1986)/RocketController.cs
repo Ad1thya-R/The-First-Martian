@@ -150,18 +150,6 @@ public class RocketController : MonoBehaviour
         
         if (state != State.Alive) { return; }
 
-       // switch (collision.gameObject.tag)
-       // {
-       //     case "Friendly":
-        //        break;
-        //    case "Finish":s
-        //        StartSuccessSequence();
-       //         break;
-       //     default:
-       //         StartDeathSequence();
-       //         break;
-      //  }
-
         if (collision.gameObject.CompareTag("Friendly") && collision.relativeVelocity.y < maximumSafeLandingVelocity)
         {   
             return;
@@ -252,12 +240,7 @@ public class RocketController : MonoBehaviour
 
     private void ReturnToMainGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
-
-    //private void RestartLevel()
-    //{
-    //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    //}
    
 }

@@ -6,9 +6,8 @@ public class onAddBtnPressed : MonoBehaviour {
     
     public void Button_Click()
     {
-        if (!State.showInstructions)
-        {
-            State.noOfAstronauts++;
-        }
+        
+        State.noOfAstronauts++;
+        
     }
 }

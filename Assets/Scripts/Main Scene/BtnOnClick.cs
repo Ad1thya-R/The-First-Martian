@@ -32,7 +32,7 @@ public class BtnOnClick : MonoBehaviour
 			alertColor.color = GameController.red;
 			
 			
-			if (State.money - State.noOfAstronauts * State.costToHire >= 0 && !State.showInstructions)
+			if (State.money - State.noOfAstronauts * State.costToHire >= 0)
 			{
 				SceneManager.LoadScene(Int32.Parse(indexOfLvlToLoad));
 			} 

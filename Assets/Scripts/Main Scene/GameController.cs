@@ -26,12 +26,8 @@ public class GameController : MonoBehaviour
 	[SerializeField] private Text alertText;
 	[SerializeField] private Image alertColor;
 
-	[SerializeField] private Text instructions;
-	[SerializeField] private GameObject instructionsGO;
-
 	private int profit = State.money - 5000000;
 	private int lostMoney = (State.money - 5000000) * -1;
-	public static int instructionIndex = 0;
 	
 	private void Start()
 	{
@@ -39,66 +35,14 @@ public class GameController : MonoBehaviour
 		noOfAstronauts.text = State.noOfAstronauts.ToString();
 		costToHire.text = "Cost: " + State.costToHire.ToString() + "$";
 
-		instructions.text = "";
 		red.a = 0;
 		alertColor.color = red;
 
-	}
-
-	void ShowInstructions()
-	{
-		State.showInstructions = true;
-		State.peekAtInstructions = true;
-		instructionsGO.SetActive(true);
-
-	}
-
-	void SetInstructionsInactive()
-	{
-		State.showInstructions = false;
-		State.peekAtInstructions = false;
-		instructionsGO.SetActive(false);
-	}
-
-	void IncreaseInstructionIndex()
-	{
-		if (instructionIndex != 16)
-		{
-			instructionIndex++;
-		}
-		else
-		{
-			instructionIndex = 0;
-			State.userIsPlayingForTheFirstTime = false;
-			Invoke("SetInstructionsInactive", 2f);
-		}
 	}
 	
 	void Update()
 	{
 		CheckGameStage();
-		
-		if (State.userIsPlayingForTheFirstTime)
-		{
-			ShowInstructions();
-		}
-
-		if (State.peekAtInstructions && !zoomBtnController.isZoomedIn)
-		{
-			instructionsGO.SetActive(true);
-		}
-
-		if (State.userIsPlayingForTheFirstTime && State.showInstructions)
-		{
-			instructions.text = "Establishing connection to Earth...";
-
-			if (!IsInvoking("IncreaseInstructionIndex"))
-			{
-				InvokeRepeating("IncreaseInstructionIndex", 3f, 3f);
-			}
-			
-			instructions.text = State.instructions[instructionIndex];
-		}
 		
 		if (Replay.replayQuery == false && State.money - State.noOfAstronauts * State.costToHire < 0 && State.costToHire < State.money)
 		{
@@ -113,14 +57,14 @@ public class GameController : MonoBehaviour
 				green.a = 1;
 				alertColor.color = green;
 				alertText.color = Color.black;
-				alertText.text = "Game over. Your company made " + profit.ToString() + "$ profit. (max: 36300000$)";
+				alertText.text = "Game over. The First Martian Inc. made " + profit.ToString() + "$ profit. (max: 36300000$)";
 			}
 			else if (State.money < 5000000)
 			{
 				red.a = 1;
 				alertColor.color = red;
 				alertText.color = Color.white;
-				alertText.text = "Game over. Your company lost " + lostMoney.ToString() + "$.";
+				alertText.text = "Game over. The First Martian Inc. lost " + lostMoney.ToString() + "$.";
 			}
 			
 		}
@@ -129,7 +73,7 @@ public class GameController : MonoBehaviour
 			red.a = 1;
 			alertColor.color = red;
 			alertText.color = Color.white;
-			alertText.text = "Game over. Your company lost " + lostMoney.ToString() + "$.";
+			alertText.text = "Game over. The First Martian Inc. lost " + lostMoney.ToString() + "$.";
 			
 		}
 		else if (Replay.replayQuery == false && State.showHowMuchMoneyPlayerMade)
