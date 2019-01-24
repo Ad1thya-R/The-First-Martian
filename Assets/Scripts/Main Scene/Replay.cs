@@ -22,6 +22,9 @@ public class Replay : MonoBehaviour
 
 	[SerializeField] private Text instructions;
 	
+	[SerializeField] private GameObject skipButtonGO;
+
+	
 	// Use this for initialization
 	void Start () {
 		btn.onClick.AddListener(BtnClicked);
@@ -71,6 +74,8 @@ public class Replay : MonoBehaviour
 			State.userIsPlayingForTheFirstTime = true;
 			GameController.instructionIndex = 0;
 			instructions.text = "";
+			State.showInstructions = true;
+			skipButtonGO.SetActive(true);
 
 		} 
 		else if (replayQuery && Input.GetKey(KeyCode.N))
