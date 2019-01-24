@@ -57,79 +57,82 @@ public class zoomBtnController : MonoBehaviour
 
 	void zoomBtnClicked()
 	{
-		if (!isZoomedIn)
+		if (!Replay.replayQuery)
 		{
-			mainCamera.transform.position = new Vector3(0f, -1.52473f, 0.84f);
-			_level1.SetActive(false);
-			_level2.SetActive(false);
-			_level3.SetActive(false);
-			_level4.SetActive(false);
-			_level5.SetActive(false);
-			_level6.SetActive(false);
-			_replay.SetActive(false);
-			alertColor.SetActive(false);
-		
-			dollar.SetActive(false);
-			noOfAstronauts.SetActive(false);
-			noOfAstronautsTextField.SetActive(false);
-			costToHire.SetActive(false);
-			infoText.SetActive(false);
-		
-			increaseBtn.SetActive(false);
-			decreaseBtn.SetActive(false);
-					
-			zoomBtn.image.overrideSprite = _zoomOutBtn;
-			isZoomedIn = true;
-		}
-		else
-		{
-			mainCamera.transform.position = new Vector3(0f, -1.52473f, -4.798908f);
-
-			if (GameController.gameStage == 6)
+			if (!isZoomedIn)
 			{
-				_replay.SetActive(true);
-				_level1.SetActive(true);
-				_level2.SetActive(true);
-				_level3.SetActive(true);
-				_level4.SetActive(true);
-				_level5.SetActive(true);
-				_level6.SetActive(true);
-				dollar.SetActive(true);
-				noOfAstronauts.SetActive(true);
-				noOfAstronautsTextField.SetActive(true);
-				costToHire.SetActive(true);
-				infoText.SetActive(true);
-				alertColor.SetActive(true);
-						
-				increaseBtn.SetActive(true);
-				decreaseBtn.SetActive(true);		
+				mainCamera.transform.position = new Vector3(0f, -1.52473f, 0.84f);
+				_level1.SetActive(false);
+				_level2.SetActive(false);
+				_level3.SetActive(false);
+				_level4.SetActive(false);
+				_level5.SetActive(false);
+				_level6.SetActive(false);
+				_replay.SetActive(false);
+				alertColor.SetActive(false);
+		
+				dollar.SetActive(false);
+				noOfAstronauts.SetActive(false);
+				noOfAstronautsTextField.SetActive(false);
+				costToHire.SetActive(false);
+				infoText.SetActive(false);
+		
+				increaseBtn.SetActive(false);
+				decreaseBtn.SetActive(false);
+					
+				zoomBtn.image.overrideSprite = _zoomOutBtn;
+				isZoomedIn = true;
 			}
 			else
 			{
-				_level1.SetActive(true);
-				_level2.SetActive(true);
-				_level3.SetActive(true);
-				_level4.SetActive(true);
-				_level5.SetActive(true);
-				_level6.SetActive(true);
-				_replay.SetActive(false);
-				alertColor.SetActive(true);
-			
-				dollar.SetActive(true);
-				noOfAstronauts.SetActive(true);
-				noOfAstronautsTextField.SetActive(true);
-				costToHire.SetActive(true);
-				infoText.SetActive(true);
-			
-				increaseBtn.SetActive(true);
-				decreaseBtn.SetActive(true);
-				
-			}
-		
-			zoomBtn.image.overrideSprite = _zoomInBtn;
-			isZoomedIn = false;
-		}
+				mainCamera.transform.position = new Vector3(0f, -1.52473f, -4.798908f);
 
+				if (GameController.gameStage == 6)
+				{
+					_replay.SetActive(true);
+					_level1.SetActive(true);
+					_level2.SetActive(true);
+					_level3.SetActive(true);
+					_level4.SetActive(true);
+					_level5.SetActive(true);
+					_level6.SetActive(true);
+					dollar.SetActive(true);
+					noOfAstronauts.SetActive(true);
+					noOfAstronautsTextField.SetActive(true);
+					costToHire.SetActive(true);
+					infoText.SetActive(true);
+					alertColor.SetActive(true);
+						
+					increaseBtn.SetActive(true);
+					decreaseBtn.SetActive(true);		
+				}
+				else
+				{
+					_level1.SetActive(true);
+					_level2.SetActive(true);
+					_level3.SetActive(true);
+					_level4.SetActive(true);
+					_level5.SetActive(true);
+					_level6.SetActive(true);
+					_replay.SetActive(false);
+					alertColor.SetActive(true);
+			
+					dollar.SetActive(true);
+					noOfAstronauts.SetActive(true);
+					noOfAstronautsTextField.SetActive(true);
+					costToHire.SetActive(true);
+					infoText.SetActive(true);
+			
+					increaseBtn.SetActive(true);
+					decreaseBtn.SetActive(true);
+				
+				}
+		
+				zoomBtn.image.overrideSprite = _zoomInBtn;
+				isZoomedIn = false;
+			}
+
+		}
 		
 	}
 }

@@ -32,18 +32,21 @@ public class soundController : MonoBehaviour
 
 	void BtnClicked()
 	{
-		_audioSource.mute = State.musicIsPlaying;
-
-		if (State.musicIsPlaying)
+		if (!Replay.replayQuery)
 		{
-			_button.image.overrideSprite = _musicOff;
-		}
-		else
-		{
-			_button.image.overrideSprite = _musicOn;
-		}
+			_audioSource.mute = State.musicIsPlaying;
 
-		State.musicIsPlaying = !State.musicIsPlaying;
+			if (State.musicIsPlaying)
+			{
+				_button.image.overrideSprite = _musicOff;
+			}
+			else
+			{
+				_button.image.overrideSprite = _musicOn;
+			}
+
+			State.musicIsPlaying = !State.musicIsPlaying;
+		}
 
 	}
 }

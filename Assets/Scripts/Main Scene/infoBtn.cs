@@ -11,7 +11,10 @@ public class infoBtn : MonoBehaviour
 	
 	public void InfoBtnClicked()
 	{
-		State.disableSkip = true;
-		SceneManager.LoadScene(1);
+		if (!Replay.replayQuery)
+		{
+			State.disableSkip = true;
+			SceneManager.LoadScene(1);
+		}	
 	}
 }

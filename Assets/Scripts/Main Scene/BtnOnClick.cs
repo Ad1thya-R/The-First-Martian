@@ -25,25 +25,29 @@ public class BtnOnClick : MonoBehaviour
 
 	void BtnClicked()
 	{
-		if (State.noOfAstronauts > 0)
+		if (!Replay.replayQuery)
 		{
-			alertText.text = "";
-			GameController.red.a = 0;
-			alertColor.color = GameController.red;
-			
-			
-			if (State.money - State.noOfAstronauts * State.costToHire >= 0)
+			if (State.noOfAstronauts > 0)
 			{
-				SceneManager.LoadScene(Int32.Parse(indexOfLvlToLoad));
-			} 
+				alertText.text = "";
+				GameController.red.a = 0;
+				alertColor.color = GameController.red;
 			
+			
+				if (State.money - State.noOfAstronauts * State.costToHire >= 0)
+				{
+					SceneManager.LoadScene(Int32.Parse(indexOfLvlToLoad));
+				} 
+			
+			}
+			else if(State.noOfAstronauts <= 0)
+			{
+				GameController.red.a = 0;
+				alertColor.color = GameController.red;
+				alertText.color = Color.white;
+				alertText.text = "You have to at least hire one astronaut!";
+			}
 		}
-		else if(State.noOfAstronauts <= 0)
-		{
-			GameController.red.a = 0;
-			alertColor.color = GameController.red;
-			alertText.color = Color.white;
-			alertText.text = "You have to at least hire one astronaut!";
-		}
+		
 	}
 }

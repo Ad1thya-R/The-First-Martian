@@ -6,8 +6,10 @@ public class onAddBtnPressed : MonoBehaviour {
     
     public void Button_Click()
     {
-        
-        State.noOfAstronauts++;
-        
+        if (!Replay.replayQuery)
+        {
+            State.noOfAstronauts++;
+        }
+           
     }
 }
