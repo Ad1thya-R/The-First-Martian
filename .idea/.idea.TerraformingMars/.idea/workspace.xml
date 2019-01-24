@@ -24,10 +24,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f8b6ce0-4bd5-4dc0-a08a-0bd2cab7d3b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Tutorial Scene/InstructionScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Tutorial Scene/InstructionScreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/skipBtnPressed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/skipBtnPressed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/TextController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/TextController.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,20 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/State.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
-              <folding>
-                <marker date="1548339926703" expanded="false" signature="6:107" ph="..." />
-                <marker date="1548339926703" expanded="true" signature="134:13526" ph="{...}" />
-                <marker date="1548339926703" expanded="true" signature="613:13522" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/soundController.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -159,7 +143,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/skipBtnPressed.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -172,6 +156,27 @@
                 <marker date="1548343503584" expanded="true" signature="565:701" ph="{...}" />
                 <marker date="1548343503584" expanded="true" signature="603:645" ph="{...}" />
                 <marker date="1548343503584" expanded="true" signature="725:2356" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/TextController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="521">
+              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+              <folding>
+                <marker date="1548346991357" expanded="false" signature="6:135" ph="..." />
+                <marker date="1548346991357" expanded="true" signature="180:1144" ph="{...}" />
+                <marker date="1548346991357" expanded="true" signature="363:408" ph="{...}" />
+                <marker date="1548346991357" expanded="true" signature="463:813" ph="{...}" />
+                <marker date="1548346991357" expanded="true" signature="575:639" ph="{...}" />
+                <marker date="1548346991357" expanded="true" signature="772:810" ph="{...}" />
+                <marker date="1548346991357" expanded="true" signature="849:1140" ph="{...}" />
+                <marker date="1548346991357" expanded="true" signature="929:1000" ph="{...}" />
+                <marker date="1548346991357" expanded="true" signature="1008:1057" ph="{...}" />
+                <marker date="1548346991357" expanded="true" signature="1088:1137" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -229,6 +234,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/TriggerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/resumeBtnPressed.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/skipBtnPressed.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/TextController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/BuildingController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/soundController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/zoomBtnController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -281,6 +287,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Scene/zoomBtnController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Main Scene/soundController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/skipBtnPressed.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/TextController.cs" />
       </list>
     </option>
   </component>
@@ -327,6 +334,12 @@
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
               <item name="Thrust (1986)" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Tutorial Scene" type="1045f7f1:UnityExplorerNode" />
             </path>
           </expand>
           <select />
@@ -415,12 +428,12 @@
       <workItem from="1548267452770" duration="21576000" />
       <workItem from="1548338963131" duration="308000" />
       <workItem from="1548343083890" duration="58000" />
-      <workItem from="1548343257640" duration="321000" />
+      <workItem from="1548343257640" duration="546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85550000" />
+    <option name="totallyTimeSpent" value="85775000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -861,6 +874,25 @@
             <marker date="1548343503584" expanded="true" signature="565:701" ph="{...}" />
             <marker date="1548343503584" expanded="true" signature="603:645" ph="{...}" />
             <marker date="1548343503584" expanded="true" signature="725:2356" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/TextController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
+          <folding>
+            <marker date="1548346991357" expanded="false" signature="6:135" ph="..." />
+            <marker date="1548346991357" expanded="true" signature="180:1144" ph="{...}" />
+            <marker date="1548346991357" expanded="true" signature="363:408" ph="{...}" />
+            <marker date="1548346991357" expanded="true" signature="463:813" ph="{...}" />
+            <marker date="1548346991357" expanded="true" signature="575:639" ph="{...}" />
+            <marker date="1548346991357" expanded="true" signature="772:810" ph="{...}" />
+            <marker date="1548346991357" expanded="true" signature="849:1140" ph="{...}" />
+            <marker date="1548346991357" expanded="true" signature="929:1000" ph="{...}" />
+            <marker date="1548346991357" expanded="true" signature="1008:1057" ph="{...}" />
+            <marker date="1548346991357" expanded="true" signature="1088:1137" ph="{...}" />
           </folding>
         </state>
       </provider>

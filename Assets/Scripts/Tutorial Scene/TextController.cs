@@ -49,7 +49,7 @@ public class TextController : MonoBehaviour
 			State.instructionsArePlaying = false;
 		}
 
-		if (instructionIndex == 16)
+		if (instructionIndex == 17)
 		{
 			State.instructionsArePlaying = false;
 		}
