@@ -24,6 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f8b6ce0-4bd5-4dc0-a08a-0bd2cab7d3b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/pauseBtnClicked.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Thrust (1986)/pauseBtnClicked.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -435,12 +436,12 @@
       <workItem from="1547977718108" duration="293000" />
       <workItem from="1548095891824" duration="74000" />
       <workItem from="1548100977574" duration="6281000" />
-      <workItem from="1548267452770" duration="21225000" />
+      <workItem from="1548267452770" duration="21576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84512000" />
+    <option name="totallyTimeSpent" value="84863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
