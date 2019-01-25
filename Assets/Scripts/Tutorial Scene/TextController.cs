@@ -14,7 +14,7 @@ public class TextController : MonoBehaviour
 	[SerializeField] private Text instructions;
 
 	public static int signalStrength = 0;
-	private bool done = false;
+	public static bool done = false;
 	
 	// Use this for initialization
 	void Start ()

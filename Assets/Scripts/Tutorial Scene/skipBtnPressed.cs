@@ -36,8 +36,12 @@ public class skipBtnPressed : MonoBehaviour
 		skipButtonHasBeenPressed = true;
 		skipButtonGO.SetActive(false);
 		State.instructionsArePlaying = false;
-		instructions.text =
-			State.line1 + State.line2 + State.line3 + State.line4 + State.line5 + State.line6 + State.line7 + State.line8 + State.line9 + State.line10 + State.line11 + State.line12 + State.line13;
+		if (TextController.done)
+		{
+			instructions.text =
+				State.line1 + State.line2 + State.line3 + State.line4 + State.line5 + State.line6 + State.line7 + State.line8 + State.line9 + State.line10 + State.line11 + State.line12 + State.line13;
+		}
+		
 		TextController.instructionIndex = State.instructions.Length - 1;
 	}
 }

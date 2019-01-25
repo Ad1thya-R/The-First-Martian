@@ -76,6 +76,13 @@ public class GameController : MonoBehaviour
 			alertText.text = "Game over. The First Martian Inc. lost " + lostMoney.ToString() + "$.";
 			
 		}
+		else if(Replay.replayQuery == false && State.noOfAstronauts <= 0)
+		{
+			red.a = 1;
+			alertColor.color = red;
+			alertText.color = Color.white;
+			alertText.text = "You have to at least hire one astronaut!";
+		}
 		else if (Replay.replayQuery == false && State.showHowMuchMoneyPlayerMade)
 		{
 			if (State.playerDidWin)
@@ -91,13 +98,6 @@ public class GameController : MonoBehaviour
 				alertText.color = Color.white;
 				alertText.text = "-" + State.investmentCost.ToString() + "$";
 			}
-		}
-		else if(Replay.replayQuery == false && State.noOfAstronauts <= 0)
-		{
-			red.a = 1;
-			alertColor.color = red;
-			alertText.color = Color.white;
-			alertText.text = "You have to at least hire one astronaut!";
 		}
 		else if (Replay.replayQuery == false)
 		{
