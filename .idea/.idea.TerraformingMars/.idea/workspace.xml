@@ -23,9 +23,7 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f8b6ce0-4bd5-4dc0-a08a-0bd2cab7d3b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9f8b6ce0-4bd5-4dc0-a08a-0bd2cab7d3b8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,10 +85,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/State.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
+            <state relative-caret-position="553">
               <caret line="41" column="107" selection-start-line="41" selection-start-column="107" selection-end-line="41" selection-end-column="107" />
               <folding>
                 <marker date="1548360584234" expanded="false" signature="6:107" ph="..." />
@@ -101,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/soundController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
+            <state relative-caret-position="607">
               <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
               <folding>
                 <marker date="1548344166578" expanded="false" signature="6:100" ph="..." />
@@ -439,12 +437,12 @@
       <workItem from="1548343257640" duration="3210000" />
       <workItem from="1548358782282" duration="109000" />
       <workItem from="1548359308321" duration="66000" />
-      <workItem from="1548361407552" duration="619000" />
+      <workItem from="1548361407552" duration="974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89233000" />
+    <option name="totallyTimeSpent" value="89588000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -882,21 +880,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/State.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="41" column="107" selection-start-line="41" selection-start-column="107" selection-end-line="41" selection-end-column="107" />
-          <folding>
-            <marker date="1548360584234" expanded="false" signature="6:107" ph="..." />
-            <marker date="1548360584234" expanded="true" signature="134:15074" ph="{...}" />
-            <marker date="1548360584234" expanded="true" signature="613:15070" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/soundController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
+        <state relative-caret-position="607">
           <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
             <marker date="1548344166578" expanded="false" signature="6:100" ph="..." />
@@ -908,6 +894,18 @@
             <marker date="1548344166578" expanded="true" signature="682:934" ph="{...}" />
             <marker date="1548344166578" expanded="true" signature="761:817" ph="{...}" />
             <marker date="1548344166578" expanded="true" signature="825:880" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Main Scene/State.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="41" column="107" selection-start-line="41" selection-start-column="107" selection-end-line="41" selection-end-column="107" />
+          <folding>
+            <marker date="1548360584234" expanded="false" signature="6:107" ph="..." />
+            <marker date="1548360584234" expanded="true" signature="134:15074" ph="{...}" />
+            <marker date="1548360584234" expanded="true" signature="613:15070" ph="{...}" />
           </folding>
         </state>
       </provider>
