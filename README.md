@@ -20,7 +20,7 @@ Nico Bachner (Designer)
 ## Credits:
 
 ### Music:
-[“Twinkling Stars” by Roald Strauss](http://www.dewfall.dk)
+[“Fallen Hero” by Roald Strauss](http://www.dewfall.dk)
 
 ### Sound: 
 [“Rocket” by dobroride](http://www.soundbible.com/1498-Rocket.html)
@@ -32,6 +32,9 @@ Nico Bachner (Designer)
 [“Compressed Air” by ThompsonMan](https://freesound.org/people/ThompsonMan/sounds/237245/)
 
 ### Images:
+"Sunrise" by Maciej Rebisz <br />
+Licence: n/a <br />
+
 “Info icon” by Google Inc.  <br />
 Licence: Creative Commons (Attribution-Share Alike 3.0 Unported) <br />
 From Icon Set: Google Material Design icons <br />
