@@ -23,12 +23,7 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f8b6ce0-4bd5-4dc0-a08a-0bd2cab7d3b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TerraformingMars/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Main Scene/State.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Main Scene/State.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/TextController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/TextController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/skipBtnPressed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/skipBtnPressed.cs" afterDir="false" />
-    </list>
+    <list default="true" id="9f8b6ce0-4bd5-4dc0-a08a-0bd2cab7d3b8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/TextController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+            <state relative-caret-position="-18">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <marker date="1548435443714" expanded="false" signature="6:135" ph="..." />
                 <marker date="1548435443714" expanded="true" signature="180:1792" ph="{...}" />
@@ -415,12 +410,12 @@
       <workItem from="1548343257640" duration="3210000" />
       <workItem from="1548358782282" duration="109000" />
       <workItem from="1548359308321" duration="66000" />
-      <workItem from="1548361407552" duration="4071000" />
+      <workItem from="1548361407552" duration="4288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92685000" />
+    <option name="totallyTimeSpent" value="92902000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -867,8 +862,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial Scene/TextController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state relative-caret-position="-18">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <marker date="1548435443714" expanded="false" signature="6:135" ph="..." />
             <marker date="1548435443714" expanded="true" signature="180:1792" ph="{...}" />
