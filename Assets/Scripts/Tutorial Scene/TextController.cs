@@ -36,7 +36,7 @@ public class TextController : MonoBehaviour
 		if (!IsInvoking("IncreaseInstructionIndex") && done)
 		{
 			State.instructionsArePlaying = true;
-			InvokeRepeating("IncreaseInstructionIndex", 2f, 3f);
+			InvokeRepeating("IncreaseInstructionIndex", 0f, 3f);
 		}
 
 		if (done)
@@ -68,7 +68,7 @@ public class TextController : MonoBehaviour
 	void IncreaseInstructionIndex()
 	{
 		
-		if (instructionIndex != 17 && !skipBtnPressed.skipButtonHasBeenPressed)
+		if (instructionIndex != State.instructions.Length - 1 && !skipBtnPressed.skipButtonHasBeenPressed)
 		{
 			instructionIndex++;
 		}
@@ -77,7 +77,7 @@ public class TextController : MonoBehaviour
 			State.instructionsArePlaying = false;
 		}
 
-		if (instructionIndex == 17)
+		if (instructionIndex == State.instructions.Length - 1)
 		{
 			State.instructionsArePlaying = false;
 		}
