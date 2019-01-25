@@ -92,6 +92,13 @@ public class GameController : MonoBehaviour
 				alertText.text = "-" + State.investmentCost.ToString() + "$";
 			}
 		}
+		else if(Replay.replayQuery == false && State.noOfAstronauts <= 0)
+		{
+			red.a = 1;
+			alertColor.color = red;
+			alertText.color = Color.white;
+			alertText.text = "You have to at least hire one astronaut!";
+		}
 		else if (Replay.replayQuery == false)
 		{
 			red.a = 0;
