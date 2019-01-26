@@ -23,7 +23,7 @@ public static class State
 
     public static string line1 = "markwatney$ Establishing connection to Earth...";
     public static string line2 = "\nmarkwatney$ Signal strength: 100%";
-    public static string line3 = "\nmarkwatney$ Hi! I’m Matt.";
+    public static string line3 = "\nmarkwatney$ Hi! I’m Mark.";
     public static string line4 = "\nmarkwatney$ I am the first human to have set foot on Mars.";
     public static string line5 = "\nmarkwatney$ I run a company back on Earth called The First Martian Inc.";
     public static string line6 = "\nmarkwatney$ Space seems very profitable and we intend to make a fortune out of it.";
