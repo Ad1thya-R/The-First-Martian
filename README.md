@@ -1,5 +1,7 @@
 # The First Martian 
 
+**Winner of Luxembourg Tech School's 3rd annual Game Development Pitch Competition 2019 "BEST TEAM"**
+
 Alpha 4.1
 
 Made with ❤️ in Luxembourg <br />
