@@ -102,4 +102,5 @@ Licence: Free for commercial use <br />
 From Icon Set: Google Material Design icons <br />
 [material.io](https://material.io/)
 
-
+## License:
+[MIT](https://github.com/liang-leon/The-First-Martian/blob/master/LICENSE) 
