@@ -8,9 +8,9 @@ Made with ❤️ in Luxembourg <br />
 For <br />
 Luxembourg Tech School a.s.b.l (LTS) <br />
 By <br />
-Sibylle Lekens (Project Manager) <br />
 Leon Liang (Project Manager, Chief Programmer) <br />
 Adithya Ravichandran (Chief Designer) <br />
+Sibylle Lekens (Project Manager) <br />
 Nico Bachner (Designer)
 
 ## Controls:
